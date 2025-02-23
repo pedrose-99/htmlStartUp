@@ -8,7 +8,7 @@ body{
     color:white;
 }
 .header{
-    background-image: url(cafe.jpg);
+    background-image: url(Imagenes/cafe.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -22,10 +22,15 @@ body{
 .inicio{
     display:flex;
     align-items: center;
+    
     justify-content: space-between;
 }
 .logo{
-    color:aliceblue;   
+    color:aliceblue; 
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 100;
 }
 .navbar{
     display: flex;
@@ -33,6 +38,15 @@ body{
     align-items: center;
     gap: 20px;
     padding-right: 20px;
+    position: fixed;
+    top:0;
+    right: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.296);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    border-bottom-left-radius: 20px ;
 }
 .menu1{
     text-decoration: none;
@@ -40,11 +54,12 @@ body{
 }
 .eslogan .h1{
     font-size: 60px;
-    color:rgb(233, 170, 110);
+    color:rgb(180, 131, 85);
     margin-bottom: -20px;
     align-content: center;
 }
 .eslogan{
+    color:rgb(212, 184, 158);
     text-align: center;
     font-size: 30px;
     margin-bottom: 200px;
@@ -57,10 +72,11 @@ body{
 }
 .nosotros .h1{
     font-size: 40px;
-    color:rgb(108, 74, 37);
+    color:rgb(180, 131, 85);
     text-align: center;
 }
 .descripcion{
+    color:rgb(96, 85, 79);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -80,24 +96,168 @@ body{
     margin-left: -80px;
 }
 .Productos{
-    color:black;
-    background-color: rgb(103, 56, 30);
+    color:rgb(0, 0, 0);
+    background-color: rgb(72, 44, 27);
     padding-top: 20px;
+    padding-bottom: 50px;
 }
 .Productos .h1{
     font-size: 60px;
     text-align: center;
 }
+.Productos .h2{
+    margin-left: 30px;
+    font-size: 40px;
+    background-color: black;
+    color:rgb(94, 66, 35);
+    border-radius: 20px;
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-right: 1000px;
+    text-align: left;
+}
+.cafesTipo1{
+    display:flex;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 30px;
+}
 .cafesTipos{
     display: flex;
+    flex-direction: column;
     align-items: center;
     background-color: aliceblue;
     text-align: center;
     border-radius: 20px;
+    max-width: 300px;
+    min-width:300px;
+    max-height: 400px;
+    min-height: 400px;
 }
-.descripciones{
+.TipoCafe{
+    max-width: 300px;
+    min-width: 300px;
+    max-height: 200px;
+    min-height: 200px;
+    border-radius: 15px;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+}
+.descubre{
     display: flex;
     align-items: center;
+    margin-top: 60px;
+    margin-right: 620px;
+    border-radius: 50px;
+    margin-left: 620px;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    background-color: tan;
     
+}
+.descubre-mas {
+    color:rgb(55, 45, 33);
+    text-decoration: none;
+    margin-left: 70px;
+}
+.test{
+    color:black;
+    background-color: rgb(201, 130, 53);
+    padding-top: 20px;
+    padding-bottom: 90px;
+    background-image: url("Imagenes/cafe.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.recomendaciones{
+    font-size: 50px;
+    text-align: center;
+    color:rgb(255, 255, 255);
+    margin-top: 60px;
+}
+.testlink{
+    text-decoration: none;
+    color:rgb(83, 58, 41);
+    background-color: rgb(214, 154, 63);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 30px;
+    margin-left: 200px;
+    margin-right: 200px;
+    display: flex;
+    flex-direction: column;
+}
+.testTitulo{
+    font-size: 40px;
+    color:rgb(45, 32, 18);
+    margin-left: 350px;
+
+}
+.testHacer{
+    margin-top: -20px;
+    margin-left: 300px;
+}
+.noticias{
+    padding-top: 20px;
+    background-color: rgb(254, 254, 254);
+}
+.Informate{
+    font-size: 60px;
+    text-align: center;
+    color:rgb(95, 55, 35);
+}
+.noticiasLista{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.noticia1{
+    background-image: url(Imagenes/cafe.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 500px;
+    min-width: 500px;
+    max-height: 600px;
+    min-height: 600px;
+    text-align: center;
+}
+.noticia2{
+    display:flex;
+    flex-direction: column;
+    
+}
+.noticia21{
+    background-image: url(Imagenes/cafe.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 400px;
+    min-width: 400px;
+    max-height: 285px;
+    min-height: 285px;
+    text-align: center;
+}
+.noticia22{
+    background-image: url(Imagenes/cafe.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 400px;
+    min-width: 400px;
+    max-height: 285px;
+    min-height: 285px;
+    text-align: center;
+}
+.noticia3{
+    background-image: url(Imagenes/cafe.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 500px;
+    min-width: 500px;
+    max-height: 600px;
+    min-height: 600px;
+    text-align: center;
+}
+.uneteAnosotros{
+    color:black;
 }
 
