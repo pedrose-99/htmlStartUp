@@ -55,6 +55,7 @@ select{
     border: none;
     color: white;
     border-radius: 10px;
+    margin-top: 50px;
     font-size: 18px;
     font-weight: 500;
     cursor:pointer
@@ -67,5 +68,17 @@ select{
 }
 
 .btn:disabled{
+    cursor: not-allowed;
     background-color: rgba(236,134,0,0.8);
+}
+
+.hide{
+    display: none;
+}
+
+.quizz .number{
+    color:white;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 20px;
 }
