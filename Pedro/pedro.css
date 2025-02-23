@@ -67,5 +67,10 @@ select{
 }
 
 .btn:disabled{
+    cursor: not-allowed;
     background-color: rgba(236,134,0,0.8);
+}
+
+.hide{
+    do
 }
