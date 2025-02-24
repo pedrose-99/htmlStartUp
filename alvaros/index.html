@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffe Switch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Encabezado de la página -->
+    <header class="encabezado">
+        <!-- Barra de navegación -->
+        <div class="barra-navegacion">
+            <img class="logo" src="Imagenes/Header/Logo.png" alt="LOGO">
+            <nav class="enlaces-navegacion">
+                <a class="enlace-navegacion" href="">Lorem</a>
+                <a class="enlace-navegacion" href="">Lorem</a>
+                <a class="enlace-navegacion" href="">Lorem</a>
+                <a class="enlace-navegacion" href="">Lorem</a>
+            </nav>
+        </div>
+
+        <!-- Contenedor principal del encabezado -->
+        <div class="contenedor-principal">
+            <!-- Contenedor izquierdo -->
+            <div class="contenedor-izquierdo">
+                <h1 class="titulo">Lorem ipsum dolor</h1>
+                <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, laborum magni dolore sed necessitatibus, vitae nam iste tempora sunt harum at culpa? Eligendi cumque voluptates dolorum nihil voluptas non, in molestias, excepturi, quis aperiam amet.</p>
+
+                <!-- Enlaces dentro del contenedor izquierdo -->
+                <div class="enlaces-contenido">
+                    <a class="enlace-boton boton-primario" href="">Lorem, ipsum.</a>
+                    <a class="enlace-boton boton-secundario" href="">Lorem, ipsum.</a>
+                </div>
+
+                <!-- Carrusel de imágenes -->
+                <div class="carrusel">
+                    <div class="carrusel-interno">
+                        <div class="carrusel-activo">
+                            <img class="imagen-carrusel" src="Imagenes/Header/Fabrica.jpg" alt="Imagen 1">
+                        </div>
+                    </div>
+                    <div class="botones-carrusel">
+                        <button class="boton-anterior" onclick="prevSlide()">&#10094;</button>
+                        <button class="boton-siguiente" onclick="nextSlide()">&#10095;</button>
+                    </div>
+                </div>
+            </div>
+
+            <img class="imagen-derecha" src="Imagenes/Header/Fabrica-2.jpg" alt="Imagen 2">
+        </div>
+    </header>
+
+   
+    <!-- Sección 2 -->
+    <section class="seccion-secundaria">
+        <h2 class="titulo-seccion">Lorem, ipsum dolor sit</h2>
+        <p class="texto-seccion">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+        <div class="galeria-imagenes">
+            <div class="fila-imagenes">
+                <img class="imagen-grande" src="Imagenes/Seccion-2/Cafe-1.png" alt="Imagen 1">
+                <img class="imagen-pequena" src="Imagenes/Seccion-2/Cafe-2.jpg" alt="Imagen 2">
+            </div>
+            <div class="fila-imagenes">
+                <img class="imagen-pequena" src="Imagenes/Seccion-2/Cafe-3.jpg" alt="Imagen 3">
+                <img class="imagen-grande" src="Imagenes/Seccion-2/Cafe-4.jpg" alt="Imagen 4">
+            </div>
+    </section>
+
+    <!-- Sección 3 -->
+    <section class="seccion-terciaria">
+        <div class="caja">
+            <img class="imagen-caja" src="Imagenes/Seccion-3/icono-1.png" alt="Icono-1">
+            <h3 class="titulo-caja">Lorem ipsum dolor sit amet.</h3>
+            <p class="texto-caja">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum odit mollitia, debitis ab similique at nemo nihil deleniti velit iure.</p>
+            <a class="enlace-caja" href="">Lorem</a>
+        </div>
+        <div class="caja">
+            <img class="imagen-caja" src="Imagenes/Seccion-3/icono-2.png" alt="Icono-2">
+            <h3 class="titulo-caja">Lorem ipsum dolor sit amet.</h3>
+            <p class="texto-caja">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum odit mollitia, debitis ab similique at nemo nihil deleniti velit iure.</p>
+            <a class="enlace-caja" href="">Lorem</a>
+        </div>
+        <div class="caja">
+            <img class="imagen-caja" src="Imagenes/Seccion-3/icono-3.png" alt="Icono-3">
+            <h3 class="titulo-caja">Lorem ipsum dolor sit amet.</h3>
+            <p class="texto-caja">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum odit mollitia, debitis ab similique at nemo nihil deleniti velit iure.</p>
+            <a class="enlace-caja" href="">Lorem</a>
+        </div>
+    </section>
+
+
+
+    <!-- Sección 5 -->
+    <section class="seccion-quinta">
+        <img class="contenedor" src="Imagenes/Seccion-5/cafe-left.png" alt="Fondos-abtractos">
+        <div class="texto-contenedor">
+            <h2 class="titulo-seccion">Lorem ipsum dolor sit, amet consectetur adipisicing.</h2>
+            <p class="texto-seccion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dignissimos iure, vitae deserunt, odit hic, error architecto consectetur delectus molestias sequi tenetur ea doloremque?</p>
+            <p class="texto-seccion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit animi sequi aut cumque, consequatur tenetur saepe reprehenderit soluta eum beatae autem earum similique expedita id unde sunt excepturi! Ratione molestias quis ipsa!</p>
+        </div>
+    </section>
+
+
+    <!-- Sección 7 -->
+    <section class="seccion-septima">
+        <h2 class="titulo-seccion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde!</h2>
+        <div class="caja">
+            <img class="imagen-caja" src="Imagenes/Seccion-7/Persona-1.png" alt="Icono-1">
+            <img class="imagen-caja" src="Imagenes/Seccion-7/Persona-5.png" alt="Icono-2">
+            <img class="imagen-caja" src="Imagenes/Seccion-7/Persona-2.png" alt="Icono-3">
+            <img class="imagen-caja" src="Imagenes/Seccion-7/Persona-3.png" alt="Icono-4">
+            <img class="imagen-caja" src="Imagenes/Seccion-7/Persona-4.png" alt="Icono-5">
+
+        </div>
+    </section>
+
+
+    <!-- Pie de página -->
+    <footer class="pie-de-pagina">
+        <!-- Contenido izquierdo del pie de página -->
+        <div class="contenedor-principal">
+            <div class="contenido-izquierdo">
+                <h2 class="titulo-pie">Lorem ipsum dolor sit amet.</h2>
+                <p class="texto-pie">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <p class="texto-pie">Lorem ipsum dolor sit.</p>
+                <p class="texto-pie">202-555-0126</p>
+                <p class="texto-pie">Lorem, ipsum.</p>
+                <!-- Iconos de redes sociales -->
+                <div class="iconos-redes">
+                    <p class="texto-pie">Síguenos:</p>
+                    <a href="#" class="enlace-red"><img src="Imagenes/Footer/Facebook.png" alt="Facebook"></a>
+                    <a href="#" class="enlace-red"><img src="Imagenes/Footer/Instagram.webp" alt="Instagram"></a>
+                </div>
+            </div>
+            <!-- Contenido derecho del pie de página -->
+            <div class="contenido-derecho">
+                <!-- Formulario de contacto -->
+                <form class="formulario-contacto">
+                    <input type="text" placeholder="Name" required class="entrada-formulario">
+                    <input type="email" placeholder="Email" required class="entrada-formulario">
+                    <textarea placeholder="Talk to us" required class="area-texto-formulario"></textarea>
+                    <button type="submit" class="boton-formulario">Send</button>
+                </form>
+            </div>
+        </div>
+        <!-- Enlaces Nuevos -->
+        <div class="contenedor-inferior">
+            <nav class="enlaces-navegacion">
+                <a class="enlace-navegacion" href="">Lorem</a>
+                <a class="enlace-navegacion" href="">Lorem</a>
+                <a class="enlace-navegacion" href="">Lorem</a>
+                <a class="enlace-navegacion" href="">Lorem</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+
+</html>
