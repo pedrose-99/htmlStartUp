@@ -82,11 +82,21 @@ body{
     justify-content: space-between;
     margin-left: 100px;
     margin-right: 100px;
+    padding-bottom: 30px;
+}
+.saberMas {
+    background-color: rgb(201, 130, 53);
+    padding: 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    color:black;
+    font-size: 20px;
 }
 .parrafo{
     margin-left: 30px;
     font-size: 30px;
-    text-align: left;
+    text-align: justify;
+    margin-bottom: 40px;
 }
 .img{
     max-width:500px;
@@ -94,6 +104,7 @@ body{
     min-width: 500px;
     min-height: 400px;
     margin-left: -80px;
+    margin-top: 20px;
 }
 .Productos{
     color:rgb(0, 0, 0);
@@ -259,5 +270,8 @@ body{
 }
 .uneteAnosotros{
     color:black;
+}
+.TeInteresa{
+ color:black;
 }
 
