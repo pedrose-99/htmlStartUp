@@ -1,17 +1,35 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 196, 94);
+    font-size: 18px;
+}
+.titulo-formulario{
+    font-size: 60px;
+    margin-bottom: -10px;
 }
 .form{
-margin-left: 10px;    
-margin-top: 40px;
+    margin-left: 10px;    
+    margin-top: 40px;
 }
 .espacioDeTexto{
-
+    padding:10px;
+    padding-right: 80px;
 }
 .porQue{
     box-sizing: border-box;
     width: 500px;
     height: 300px;
+    display: flex;
+    padding-bottom: 250px;
+}
+.curriculum{
+    font-size: 18px;
+}
+.curriculumTexto{
+    font-size: 18px;
+}
+.socio{
+    font-size: 18px;
 }
 .divFormulario{
     display: flex;
@@ -26,6 +44,8 @@ margin-top: 40px;
     margin-top: 30px;
     text-align: center;
     border-radius: 10px;
+    padding-right: 710px;
+    padding-left: 750px;
 }
 .textoEnviar{
     display: flex;

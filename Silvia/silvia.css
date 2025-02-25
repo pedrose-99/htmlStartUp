@@ -272,6 +272,7 @@ body{
     display: flex;
     background-color:rgb(214, 154, 63);
     margin-top: 60px;
+    padding-bottom: 40px;
 }
 .union{
     display: flex;
@@ -320,6 +321,7 @@ body{
 .enviar{
     text-align: right;
     padding: 20px;
+    padding-right: 22px;
     background-color: white;
     margin-left: 410px;
     margin-top: 30px;
@@ -328,4 +330,35 @@ body{
 .send{
     text-decoration: none;
     color:rgb(90, 65, 29);
+}
+.rellenable{
+    color:black;
+}
+.contacto{
+    color:rgb(255, 255, 255);
+    text-align: center;
+    font-size: 30px;
+    background-color: black;
+    margin-top: -40px;
+    padding-bottom: 50px;
+}
+.contactanos{
+    padding-top: 40px;
+    font-size: 60px;
+}
+.espacioDeTexto1{
+    width: 700px;
+    height: 40px;
+    margin-bottom: -40px;
+    border-radius: 10px;
+    margin-left: 30px;
+    padding-left: 10px;
+}
+.noborder1{
+    width: 700px;
+    height: 100px;
+    margin-left: 30px;
+    border-radius: 10px;
+    padding-bottom: 170px;
+    padding-left: 10px;
 }
