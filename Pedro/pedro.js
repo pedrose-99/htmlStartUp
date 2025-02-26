@@ -17,3 +17,6 @@ const startQuiz = () =>
 
     const url = 1
 }
+
+//Usar dom
+
