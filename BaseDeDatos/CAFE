@@ -21,4 +21,108 @@ CREATE TABLE SUMINISTRA (ID_PRODUCTO TEXT(9), NIF_PROVEEDOR TEXT(9), CANTIDAD IN
 
 --Tabla Contabilidad
 
-CREATE TABLE CONTABILIDAD (ID_PRODUCTO TEXT(9), DNI_CLIENTE TEXT(9), DNI_EMPLEADO TEXT(9), FECHA date, TIPO TEXT(30), MONTO REAL(8,2), EVENTO TEXT(50), PROYECTO TEXT(50), EMAIL TEXT(25),  FOREIGN KEY (ID_PRODUCTO) REFERENCES PRODUCTO(ID_PRODUCTO), FOREIGN KEY (DNI_CLIENTE) REFERENCES CLIENTE(DNI), FOREIGN KEY (DNI_EMPLEADO) REFERENCES EMPLEADO(DNI),PRIMARY KEY (ID_PRODUCTO, DNI_CLIENTE, DNI_EMPLEADO, FECHA));
+CREATE TABLE CONTABILIDAD (ID_PRODUCTO TEXT(9), DNI_CLIENTE TEXT(9), DNI_EMPLEADO TEXT(9), FECHA date, TIPO TEXT(30), MONTO REAL(8,2), EVENTO TEXT(50), PROYECTO TEXT(50),  FOREIGN KEY (ID_PRODUCTO) REFERENCES PRODUCTO(ID_PRODUCTO), FOREIGN KEY (DNI_CLIENTE) REFERENCES CLIENTE(DNI), FOREIGN KEY (DNI_EMPLEADO) REFERENCES EMPLEADO(DNI),PRIMARY KEY (ID_PRODUCTO, DNI_CLIENTE, DNI_EMPLEADO, FECHA));
+
+
+
+--Insertar valores en tablas
+
+--Tabla CLIENTE
+
+INSERT INTO CLIENTE (DNI, NOMBRE, DIRECCION, CIUDAD, PROVINCIA, PAIS, TELEFONO, EMAIL)  
+VALUES  
+('111222333', 'Carlos Ramírez', 'Calle Luna 12', 'Sevilla', 'Sevilla', 'España', '612345678', 'carlos.ramirez@email.com'),  
+('444555666', 'Ana Torres', 'Av. del Sol 89', 'Valencia', 'Valencia', 'España', '623456789', 'ana.torres@email.com'),  
+('777888999', 'Pedro Gómez', 'Paseo de la Paz 56', 'Bilbao', 'Vizcaya', 'España', '634567890', 'pedro.gomez@email.com');
+
+INSERT INTO CLIENTE (DNI, NOMBRE, DIRECCION, CIUDAD, PROVINCIA, PAIS, TELEFONO, EMAIL)  
+VALUES  
+('222333444', 'Lucía Fernández', 'Rua das Flores 10', 'Lisboa', 'Lisboa', 'Portugal', '645678901', 'lucia.fernandez@email.com'),  
+('555666777', 'Andrés Pereira', 'Av. Paulista 2500', 'São Paulo', 'São Paulo', 'Brasil', '656789012', 'andres.pereira@email.com'),  
+('888999000', 'Emily Smith', '5th Avenue 120', 'New York', 'New York', 'USA', '667890123', 'emily.smith@email.com');
+
+INSERT INTO CLIENTE (DNI, NOMBRE, DIRECCION, CIUDAD, PROVINCIA, PAIS, TELEFONO, EMAIL)  
+VALUES  
+('333444555', 'Javier Moreno', 'Calle del Mar 78', 'Málaga', 'Málaga', 'España', '689728976', 'javier.moreno@email.com'),  
+('666777888', 'Sofía Castillo', 'Plaza Mayor 23', 'Salamanca', 'Salamanca', 'España', '678901234', 'sofia.castillo@email.com');
+
+INSERT INTO CLIENTE (DNI, NOMBRE, DIRECCION, CIUDAD, PROVINCIA, PAIS, TELEFONO, EMAIL)  
+VALUES  
+('999000111', 'Alejandro Domínguez Suárez', 'Calle de los Pinos, Edificio Apto 45', 'Granada', 'Granada', 'España', '689012345', 'alejandro.ds@email.com'),  
+('123789456', 'Beatriz Méndez González', 'Avenida Libertad, Bloque 3, Piso 2B', 'Zaragoza', 'Zaragoza', 'España', '690123456', 'beatriz.mendez@email.com');
+
+--Tabla EMPLEADO
+
+INSERT INTO EMPLEADO (DNI, NOMBRE, DIRECCION, CIUDAD, PROVINCIA, PAIS, TELEFONO, EMAIL, TIPO)  
+VALUES  
+('101202303', 'Ricardo Sánchez', 'Calle Mayor 10', 'Madrid', 'Madrid', 'España', '610987654', 'ricardo.sanchez@email.com', 'Comercial'),  
+('202303404', 'Elena Navarro', 'Av. Andalucía 45', 'Sevilla', 'Sevilla', 'España', '620876543', 'elena.navarro@email.com', 'Preventa'),  
+('303404505', 'Fernando Ruiz', 'Paseo Marítimo 21', 'Málaga', 'Málaga', 'España', '630765432', 'fernando.ruiz@email.com', 'Marketing'),  
+('404505606', 'Patricia Ortega', 'Calle del Sol 12', 'Barcelona', 'Barcelona', 'España', '640654321', 'patricia.ortega@email.com', 'Comercial'),  
+('505606707', 'Diego Herrera', 'Av. América 88', 'Valencia', 'Valencia', 'España', '650543210', 'diego.herrera@email.com', 'Preventa'),  
+('606707808', 'Marta Gil', 'Plaza España 5', 'Bilbao', 'Vizcaya', 'España', '660432109', 'marta.gil@email.com', 'Marketing'),  
+('707808909', 'Sergio Ramírez', 'Calle Olmos 34', 'Granada', 'Granada', 'España', '670321098', 'sergio.ramirez@email.com', 'Comercial'),  
+('808909010', 'Lorena Medina', 'Paseo del Prado 9', 'Toledo', 'Toledo', 'España', '680210987', 'lorena.medina@email.com', 'Preventa'),  
+('909010111', 'Hugo Castro', 'Calle Pez 7', 'Santander', 'Cantabria', 'España', '690109876', 'hugo.castro@email.com', 'Marketing'),  
+('010111212', 'Natalia Peña', 'Av. del Norte 33', 'Alicante', 'Alicante', 'España', '600987654', 'natalia.pena@email.com', 'Comercial');  
+
+--Tabla PRODUCTO
+
+INSERT INTO PRODUCTO (ID_PRODUCTO, INFORMACION, PRECIO)  
+VALUES  
+('CAF000001', 'Café Arábica 100% en grano, 500g', 12.99),  
+('CAF000002', 'Café Molido Intenso, 250g', 8.49),  
+('CAF000003', 'Café Descafeinado en grano, 500g', 10.99),  
+('CAF000004', 'Café Espresso Gourmet, 1kg', 18.99),  
+('CAF000005', 'Café Orgánico de Comercio Justo, 500g', 14.99),  
+('CAF000006', 'Café Mezcla Clásico, 250g', 7.99),  
+('CAF000007', 'Café en Cápsulas Compatibles, 10 unidades', 5.99),  
+('CAF000008', 'Café Instantáneo Premium, 200g', 6.49),  
+('CAF000009', 'Café con Notas de Chocolate y Caramelo, 500g', 13.49),  
+('CAF000010', 'Café Especialidad Tostado Medio, 1kg', 20.99);  
+
+
+--Tabla PROVEEDOR
+
+INSERT INTO PROVEEDOR (NIF_PROVEEDOR, NOMBRE, TELEFONO, EMAIL)  
+VALUES  
+('PROV00001', 'Café del Sur', '600123456', 'contacto@cafedelsur.com'),  
+('PROV00002', 'Tostadores Andinos', '611234567', 'ventas@tostadoresandinos.com'),  
+('PROV00003', 'Granos Selectos', '622345678', 'info@granosselectos.com'),  
+('PROV00004', 'Aroma Café', '633456789', 'soporte@aromacafe.com'),  
+('PROV00005', 'Sabores de Colombia', '644567890', 'colombia@saboresdecafe.com'),  
+('PROV00006', 'Expresso Italia', '655678901', 'italia@expressoitalia.com'),  
+('PROV00007', 'Altura Mexicana', '666789012', 'ventas@alturamexicana.com'),  
+('PROV00008', 'Cafeteros Premium', '677890123', 'premium@cafeterospremium.com'),  
+('PROV00009', 'Finca La Esperanza', '688901234', 'contacto@fincalaesperanza.com'),  
+('PROV00010', 'Tierra y Aroma', '699012345', 'info@tierrayaroma.com');  
+
+--Tabla SUMINISTRA
+
+INSERT INTO SUMINISTRA (ID_PRODUCTO, NIF_PROVEEDOR, CANTIDAD)  
+VALUES  
+('CAF000001', 'PROV00001', 500),  
+('CAF000002', 'PROV00002', 300),  
+('CAF000003', 'PROV00003', 450),  
+('CAF000004', 'PROV00004', 600),  
+('CAF000005', 'PROV00005', 350),  
+('CAF000006', 'PROV00006', 400),  
+('CAF000007', 'PROV00007', 250),  
+('CAF000008', 'PROV00008', 550),  
+('CAF000009', 'PROV00009', 700),  
+('CAF000010', 'PROV00010', 380);  
+
+--Tabla CONTABILIDAD
+
+INSERT INTO CONTABILIDAD (ID_PRODUCTO, DNI_CLIENTE, DNI_EMPLEADO, FECHA, TIPO, MONTO, EVENTO, PROYECTO, EMAIL)  
+VALUES  
+('CAF000001', '111222333', '101202303', '2025-02-20', 'Venta', 25.98, 'Compra minorista', 'Café para oficina', 'carlos.ramirez@email.com'),  
+('CAF000002', '444555666', '202303404', '2025-02-18', 'Venta', 16.98, 'Pedido online', 'Desayunos saludables', 'ana.torres@email.com'),  
+('CAF000003', '777888999', '303404505', '2025-02-17', 'Venta', 32.97, 'Compra en tienda', 'Suministro de café', 'pedro.gomez@email.com'),  
+('CAF000004', '222333444', '404505606', '2025-02-15', 'Devolución', -18.99, 'Producto defectuoso', 'Reembolso al cliente', 'lucia.fernandez@email.com'),  
+('CAF000005', '555666777', '505606707', '2025-02-14', 'Venta', 44.97, 'Venta mayorista', 'Café para restaurante', 'andres.pereira@email.com'),  
+('CAF000006', '888999000', '606707808', '2025-02-12', 'Venta', 23.97, 'Promoción especial', 'Lanzamiento de marca', 'emily.smith@email.com'),  
+('CAF000007', '333444555', '707808909', '2025-02-10', 'Venta', 11.98, 'Compra directa', 'Regalo corporativo', 'javier.moreno@email.com'),  
+('CAF000008', '666777888', '808909010', '2025-02-08', 'Venta', 38.97, 'Compra al por mayor', 'Suministro de empresa', 'sofia.castillo@email.com'),  
+('CAF000009', '999000111', '909010111', '2025-02-05', 'Devolución', -13.49, 'Producto no conforme', 'Reembolso al cliente', 'alejandro.dominguez@email.com'),  
+('CAF000010', '123789456', '010111212', '2025-02-03', 'Venta', 62.97, 'Pedido programado', 'Café gourmet', 'beatriz.mendez@email.com');  
