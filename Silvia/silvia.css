@@ -1,4 +1,6 @@
-
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     font-family: Arial, Helvetica, sans-serif;
@@ -7,8 +9,9 @@ body{
     box-sizing: border-box;
     color:white;
 }
+
 .header{
-    background-image: url(Imagenes/cafe.jpg);
+    background-image: url(Imagenes/Cafe1.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -48,9 +51,13 @@ body{
     padding-left: 20px;
     border-bottom-left-radius: 20px ;
 }
+
 .menu1{
     text-decoration: none;
     color:white;
+}
+.menu1:hover{
+    color:rgb(237, 176, 62);
 }
 .eslogan .h1{
     font-size: 60px;
@@ -91,6 +98,10 @@ body{
     text-decoration: none;
     color:black;
     font-size: 20px;
+}
+.saberMas:hover{
+    background-color: rgb(81, 52, 21);
+    transition-duration: 0.3s;
 }
 .parrafo{
     margin-left: 30px;
@@ -172,12 +183,16 @@ body{
     text-decoration: none;
     margin-left: 70px;
 }
+.descubre:hover{
+    background-color: rgb(124, 97, 61);
+    transition-duration: 0.3s;
+}
 .test{
     color:black;
     background-color: rgb(201, 130, 53);
     padding-top: 20px;
     padding-bottom: 90px;
-    background-image: url("Imagenes/cafe.jpg");
+    background-image: url("Imagenes/Cafe4.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -198,6 +213,11 @@ body{
     margin-right: 200px;
     display: flex;
     flex-direction: column;
+}
+.testlink:hover{
+    background-color: rgb(129, 87, 42);
+    color:rgb(45, 32, 18);
+    transition-duration: 0.3s;
 }
 .testTitulo{
     font-size: 40px;
@@ -224,7 +244,7 @@ body{
     justify-content: space-between;
 }
 .noticia1{
-    background-image: url(Imagenes/cafe.jpg);
+    background-image: url(Imagenes/Cafe5.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 500px;
@@ -233,33 +253,47 @@ body{
     min-height: 598px;
     text-align: center;
 }
+.noticia1:hover{
+    filter:brightness(50%);
+    transition-duration: 0.4s;
+}
 .noticia2{
     display:flex;
     flex-direction: column;
-    
 }
+
 .noticia21{
-    background-image: url(Imagenes/cafe.jpg);
+    background-image: url(Imagenes/Cafe6.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 400px;
     min-width: 400px;
     max-height: 282px;
     min-height: 282px;
-    text-align: center;
+    text-align: left;
+    color:white;
+}
+.noticia21:hover{
+    filter:brightness(50%);
+    transition-duration: 0.4s;
 }
 .noticia22{
-    background-image: url(Imagenes/cafe.jpg);
+    background-image: url(Imagenes/Cafe7.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 400px;
     min-width: 400px;
     max-height: 284px;
     min-height: 284px;
-    text-align: center;
+    text-align: left;
+    color:white;
+}
+.noticia22:hover{
+    filter:brightness(50%);
+    transition-duration: 0.4s;
 }
 .noticia3{
-    background-image: url(Imagenes/cafe.jpg);
+    background-image: url(Imagenes/Cafe8.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 500px;
@@ -267,6 +301,32 @@ body{
     max-height: 598px;
     min-height: 598px;
     text-align: center;
+}
+.noticia3:hover{
+    filter:brightness(50%);
+    transition-duration: 0.4s;
+}
+.textoNoticias{
+    font-size: 40px;
+    text-align: left;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.814);
+    padding: 20px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    margin-right: 40px;
+}
+.noticia1link{
+    text-decoration: none;
+}
+.noticia2link{
+    text-decoration: none;
+}
+.noticia3link{
+    text-decoration: none;
+}
+.noticia4link{
+    text-decoration: none;
 }
 .unete{
     display: flex;
@@ -327,12 +387,21 @@ body{
     margin-top: 30px;
     border-radius: 30px;
 }
+.enviar:hover{
+    background-color: rgb(222, 194, 165);
+    color:rgb(45, 32, 18);
+    transition-duration: 0.3s;
+}
 .send{
     text-decoration: none;
     color:rgb(90, 65, 29);
 }
 .rellenable{
     color:black;
+}
+.rellena:hover{
+    color:rgb(78, 54, 11);
+    transition-duration: 0.3;
 }
 .contacto{
     color:rgb(255, 255, 255);
@@ -359,6 +428,19 @@ body{
     height: 100px;
     margin-left: 30px;
     border-radius: 10px;
-    padding-bottom: 170px;
+    padding-bottom: 180px;
     padding-left: 10px;
+}
+.botonEnviarFooter{
+    text-decoration: none;
+}
+.enviarContacto{
+    color:white;
+    background-color: rgb(201, 130, 53);
+    padding: 30px;
+}
+.enviarContacto:hover{
+    background-color: rgb(129, 87, 42);
+    color:rgb(45, 32, 18);
+    transition-duration: 0.3s;
 }
