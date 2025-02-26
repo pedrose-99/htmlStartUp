@@ -114,15 +114,56 @@ VALUES
 
 --Tabla CONTABILIDAD
 
-INSERT INTO CONTABILIDAD (ID_PRODUCTO, DNI_CLIENTE, DNI_EMPLEADO, FECHA, TIPO, MONTO, EVENTO, PROYECTO, EMAIL)  
+INSERT INTO CONTABILIDAD (ID_PRODUCTO, DNI_CLIENTE, DNI_EMPLEADO, FECHA, TIPO, MONTO, EVENTO, PROYECTO)  
 VALUES  
-('CAF000001', '111222333', '101202303', '2025-02-20', 'Venta', 25.98, 'Compra minorista', 'Café para oficina', 'carlos.ramirez@email.com'),  
-('CAF000002', '444555666', '202303404', '2025-02-18', 'Venta', 16.98, 'Pedido online', 'Desayunos saludables', 'ana.torres@email.com'),  
-('CAF000003', '777888999', '303404505', '2025-02-17', 'Venta', 32.97, 'Compra en tienda', 'Suministro de café', 'pedro.gomez@email.com'),  
-('CAF000004', '222333444', '404505606', '2025-02-15', 'Devolución', -18.99, 'Producto defectuoso', 'Reembolso al cliente', 'lucia.fernandez@email.com'),  
-('CAF000005', '555666777', '505606707', '2025-02-14', 'Venta', 44.97, 'Venta mayorista', 'Café para restaurante', 'andres.pereira@email.com'),  
-('CAF000006', '888999000', '606707808', '2025-02-12', 'Venta', 23.97, 'Promoción especial', 'Lanzamiento de marca', 'emily.smith@email.com'),  
-('CAF000007', '333444555', '707808909', '2025-02-10', 'Venta', 11.98, 'Compra directa', 'Regalo corporativo', 'javier.moreno@email.com'),  
-('CAF000008', '666777888', '808909010', '2025-02-08', 'Venta', 38.97, 'Compra al por mayor', 'Suministro de empresa', 'sofia.castillo@email.com'),  
-('CAF000009', '999000111', '909010111', '2025-02-05', 'Devolución', -13.49, 'Producto no conforme', 'Reembolso al cliente', 'alejandro.dominguez@email.com'),  
-('CAF000010', '123789456', '010111212', '2025-02-03', 'Venta', 62.97, 'Pedido programado', 'Café gourmet', 'beatriz.mendez@email.com');  
+('CAF000001', '111222333', '101202303', '2025-02-20', 'Venta', 25.98, 'Compra minorista', 'Café para oficina'),  
+('CAF000002', '444555666', '202303404', '2025-02-18', 'Venta', 16.98, 'Pedido online', 'Desayunos saludables'),  
+('CAF000003', '777888999', '303404505', '2025-02-17', 'Venta', 32.97, 'Compra en tienda', 'Suministro de café'),  
+('CAF000004', '222333444', '404505606', '2025-02-15', 'Devolución', -18.99, 'Producto defectuoso', 'Reembolso al cliente'),  
+('CAF000005', '555666777', '505606707', '2025-02-14', 'Venta', 44.97, 'Venta mayorista', 'Café para restaurante'),  
+('CAF000006', '888999000', '606707808', '2025-02-12', 'Venta', 23.97, 'Promoción especial', 'Lanzamiento de marca'),  
+('CAF000007', '333444555', '707808909', '2025-02-10', 'Venta', 11.98, 'Compra directa', 'Regalo corporativo'),  
+('CAF000008', '666777888', '808909010', '2025-02-08', 'Venta', 38.97, 'Compra al por mayor', 'Suministro de empresa'),  
+('CAF000009', '999000111', '909010111', '2025-02-05', 'Devolución', -13.49, 'Producto no conforme', 'Reembolso al cliente'),  
+('CAF000010', '123789456', '010111212', '2025-02-03', 'Venta', 62.97, 'Pedido programado', 'Café gourmet');  
+
+
+INSERT INTO CONTABILIDAD (ID_PRODUCTO, DNI_CLIENTE, DNI_EMPLEADO, FECHA, TIPO, MONTO, EVENTO, PROYECTO) VALUES
+('CAF000001', '111222333', '101202303', '2025-02-25', 'Venta', 25.98, 'Compra minorista', 'Café para oficina'),
+('CAF000002', '111222333', '202303404', '2025-02-21', 'Venta', 8.49, 'Pedido online', 'Desayunos saludables'),
+('CAF000005', '111222333', '505606707', '2025-02-22', 'Venta', 14.99, 'Compra en tienda', 'Suministro de café');
+
+INSERT INTO CONTABILIDAD (ID_PRODUCTO, DNI_CLIENTE, DNI_EMPLEADO, FECHA, TIPO, MONTO, EVENTO, PROYECTO) VALUES
+('CAF000003', '444555666', '303404505', '2025-02-23', 'Venta', 10.99, 'Compra en tienda', 'Suministro de café'),
+('CAF000006', '444555666', '606707808', '2025-02-24', 'Venta', 7.99, 'Promoción especial', 'Lanzamiento de marca'),
+('CAF000008', '444555666', '808909010', '2025-02-25', 'Venta', 6.49, 'Compra al por mayor', 'Suministro de empresa');
+
+INSERT INTO CONTABILIDAD (ID_PRODUCTO, DNI_CLIENTE, DNI_EMPLEADO, FECHA, TIPO, MONTO, EVENTO, PROYECTO) VALUES
+('CAF000004', '777888999', '404505606', '2025-02-26', 'Venta', 18.99, 'Venta mayorista', 'Café para restaurante'),
+('CAF000007', '777888999', '707808909', '2025-02-27', 'Venta', 5.99, 'Compra directa', 'Regalo corporativo'),
+('CAF000010', '777888999', '010111212', '2025-02-28', 'Venta', 20.99, 'Pedido programado', 'Café gourmet');
+
+-- Cliente 222333444 (Carlos Gómez) compra varios productos
+INSERT INTO CONTABILIDAD (ID_PRODUCTO, DNI_CLIENTE, DNI_EMPLEADO, FECHA, TIPO, MONTO, EVENTO, PROYECTO) VALUES
+('CAF000001', '222333444', '101202303', '2025-02-11', 'Venta', 12.99, 'Compra minorista', 'Café para oficina'),
+('CAF000002', '222333444', '202303404', '2025-02-12', 'Venta', 8.49, 'Pedido online', 'Desayunos salud');
+
+
+
+--Consultas
+
+--Selecciona los nombres de cliente y los precios de todos los proyectos vendidos
+
+SELECT client.NOMBRE, contab.MONTO, contab.PROYECTO FROM CONTABILIDAD contab JOIN CLIENTE client ON contab.DNI_CLIENTE = client.DNI WHERE contab.TIPO = 'Venta';
+
+
+--Calcula el precio medio de todos los proyectos vendidos a un cliente determinado
+
+SELECT client.nombre, AVG(contab.MONTO) AS PRECIO_MEDIO FROM CONTABILIDAD contab JOIN CLIENTE client ON contab.DNI_CLIENTE = client.DNI WHERE contab.DNI_CLIENTE = '111222333' AND contab.TIPO = 'Venta';
+
+
+--Calcula el precio medio de todos los proyectos para un cliente en una fecha determinada
+
+SELECT client.nombre, AVG(contab.MONTO) AS PRECIO_MEDIO FROM CONTABILIDAD contab JOIN CLIENTE client ON contab.DNI_CLIENTE = client.DNI WHERE contab.DNI_CLIENTE = '111222333' AND contab.TIPO = 'Venta' and contab.FECHA = '2025-02-20';
+
+--
