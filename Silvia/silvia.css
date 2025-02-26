@@ -229,8 +229,8 @@ body{
     background-size: cover;
     max-width: 500px;
     min-width: 500px;
-    max-height: 600px;
-    min-height: 600px;
+    max-height: 598px;
+    min-height: 598px;
     text-align: center;
 }
 .noticia2{
@@ -244,8 +244,8 @@ body{
     background-size: cover;
     max-width: 400px;
     min-width: 400px;
-    max-height: 285px;
-    min-height: 285px;
+    max-height: 282px;
+    min-height: 282px;
     text-align: center;
 }
 .noticia22{
@@ -254,8 +254,8 @@ body{
     background-size: cover;
     max-width: 400px;
     min-width: 400px;
-    max-height: 285px;
-    min-height: 285px;
+    max-height: 284px;
+    min-height: 284px;
     text-align: center;
 }
 .noticia3{
@@ -264,14 +264,101 @@ body{
     background-size: cover;
     max-width: 500px;
     min-width: 500px;
-    max-height: 600px;
-    min-height: 600px;
+    max-height: 598px;
+    min-height: 598px;
     text-align: center;
 }
+.unete{
+    display: flex;
+    background-color:rgb(214, 154, 63);
+    margin-top: 60px;
+    padding-bottom: 40px;
+}
+.union{
+    display: flex;
+    margin-right: 40px;
+    margin-left: 20px;
+}
 .uneteAnosotros{
-    color:black;
+    color:#332911;
+    font-size: 50px;
+    margin-bottom: -3px;
 }
 .TeInteresa{
- color:black;
+    color:black;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
 }
-
+.pregunta{
+    background-color: #332911;
+    padding: 20px;
+    font-size: 30px;
+    color:white;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    margin-left: -20px;
+}
+.info{
+    margin-top: -5px;
+    line-height: 1.5;
+}
+.mensaje{
+    margin-left: 500px;
+    margin-top: 50px;
+}
+.noborder{
+    border: 0;
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    width: 500px;
+    height: 200px;
+    padding-bottom: 150px;
+    padding-left: 10px;
+    outline: none;
+    border-radius: 10px;
+}
+.enviar{
+    text-align: right;
+    padding: 20px;
+    padding-right: 22px;
+    background-color: white;
+    margin-left: 410px;
+    margin-top: 30px;
+    border-radius: 30px;
+}
+.send{
+    text-decoration: none;
+    color:rgb(90, 65, 29);
+}
+.rellenable{
+    color:black;
+}
+.contacto{
+    color:rgb(255, 255, 255);
+    text-align: center;
+    font-size: 30px;
+    background-color: black;
+    margin-top: -40px;
+    padding-bottom: 50px;
+}
+.contactanos{
+    padding-top: 40px;
+    font-size: 60px;
+}
+.espacioDeTexto1{
+    width: 700px;
+    height: 40px;
+    margin-bottom: -40px;
+    border-radius: 10px;
+    margin-left: 30px;
+    padding-left: 10px;
+}
+.noborder1{
+    width: 700px;
+    height: 100px;
+    margin-left: 30px;
+    border-radius: 10px;
+    padding-bottom: 170px;
+    padding-left: 10px;
+}
