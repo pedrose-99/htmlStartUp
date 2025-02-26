@@ -148,22 +148,67 @@ INSERT INTO CONTABILIDAD (ID_PRODUCTO, DNI_CLIENTE, DNI_EMPLEADO, FECHA, TIPO, M
 ('CAF000001', '222333444', '101202303', '2025-02-11', 'Venta', 12.99, 'Compra minorista', 'Café para oficina'),
 ('CAF000002', '222333444', '202303404', '2025-02-12', 'Venta', 8.49, 'Pedido online', 'Desayunos salud');
 
-
+INSERT INTO CONTABILIDAD (ID_PRODUCTO, DNI_CLIENTE, DNI_EMPLEADO, FECHA, TIPO, MONTO, EVENTO, PROYECTO) VALUES
+('CAF000001', '111222333', '202303404', '2025-02-20', 'Preventa', 12.99, 'Reserva de stock', 'Café para oficina'),
+('CAF000002', '444555666', '505606707', '2025-02-21', 'Preventa', 8.49, 'Promoción especial', 'Desayunos saludables'),
+('CAF000003', '777888999', '808909010', '2025-02-22', 'Preventa', 10.99, 'Compra anticipada', 'Suministro de café'),
+('CAF000004', '222333444', '101202303', '2025-02-23', 'Preventa', 18.99, 'Venta anticipada', 'Café gourmet'),
+('CAF000005', '555666777', '303404505', '2025-02-24', 'Preventa', 14.99, 'Reserva de stock', 'Café orgánico'),
+('CAF000006', '888999000', '404505606', '2025-02-25', 'Preventa', 7.99, 'Promoción especial', 'Lanzamiento de marca'),
+('CAF000007', '333444555', '606707808', '2025-02-26', 'Preventa', 5.99, 'Compra anticipada', 'Regalo corporativo'),
+('CAF000008', '666777888', '707808909', '2025-02-27', 'Preventa', 6.49, 'Venta anticipada', 'Café instantáneo'),
+('CAF000009', '999000111', '808909010', '2025-02-28', 'Preventa', 13.49, 'Reserva de stock', 'Café con notas de chocolate'),
+('CAF000010', '123789456', '909010111', '2025-02-29', 'Preventa', 20.99, 'Promoción especial', 'Café especialidad');
 
 --Consultas
 
---Selecciona los nombres de cliente y los precios de todos los proyectos vendidos
+--1. Selecciona los nombres de cliente y los precios de todos los proyectos vendidos
 
 SELECT client.NOMBRE, contab.MONTO, contab.PROYECTO FROM CONTABILIDAD contab JOIN CLIENTE client ON contab.DNI_CLIENTE = client.DNI WHERE contab.TIPO = 'Venta';
 
-
---Calcula el precio medio de todos los proyectos vendidos a un cliente determinado
+--2. Calcula el precio medio de todos los proyectos vendidos a un cliente determinado
 
 SELECT client.nombre, AVG(contab.MONTO) AS PRECIO_MEDIO FROM CONTABILIDAD contab JOIN CLIENTE client ON contab.DNI_CLIENTE = client.DNI WHERE contab.DNI_CLIENTE = '111222333' AND contab.TIPO = 'Venta';
 
-
---Calcula el precio medio de todos los proyectos para un cliente en una fecha determinada
+--3. Calcula el precio medio de todos los proyectos para un cliente en una fecha determinada
 
 SELECT client.nombre, AVG(contab.MONTO) AS PRECIO_MEDIO FROM CONTABILIDAD contab JOIN CLIENTE client ON contab.DNI_CLIENTE = client.DNI WHERE contab.DNI_CLIENTE = '111222333' AND contab.TIPO = 'Venta' and contab.FECHA = '2025-02-20';
 
---
+--4. Muestra por pantalla el nombre y el precio de todos los proyectos con un precio mayor o igual a la media, y que aparezcan por pantalla ordenados de menor a mayor precio.
+
+SELECT client.NOMBRE, contab.MONTO, contab.PROYECTO FROM CONTABILIDAD contab JOIN CLIENTE client ON contab.DNI_CLIENTE = client.DNI WHERE contab.TIPO = 'Venta' and contab.Monto >= (SELECT AVG(contab.MONTO) FROM CONTABILIDAD contab WHERE contab.TIPO = 'Venta');
+
+--5. Muestra por pantalla todos los datos de un proyecto, incluidos todos los datos del proveedor necesario para realizar el proyecto al cliente de la start up
+
+
+
+--6. Muestra por pantalla el precio promedio de los productos de cada proveedor, mostrando solo el código del proveedor
+
+SELECT suminist.NIF_PROVEEDOR, AVG(product.PRECIO) AS PRECIO_PROMEDIO FROM SUMINISTRA suminist JOIN PRODUCTO product ON suminist.ID_PRODUCTO = product.ID_PRODUCTO GROUP BY suminst.NIF_PROVEEDOR;
+
+--7. Muestra por pantalla los nombres de los proveedores cuyos productos tengan un precio promedio mayor o igual a uno que consideréis
+
+SELECT prov.NOMBRE FROM SUMINISTRA suminist JOIN PRODUCTO product ON suminist.ID_PRODUCTO = product.ID_PRODUCTO JOIN PROVEEDOR prov ON suminist.NIF_PROVEEDOR = prov.NIF_PROVEEDOR GROUP BY prov.NIF_PROVEEDOR HAVING AVG(product.PRECIO) >= 10;
+
+--8.Muestra por pantalla el nombre y el precio del proyecto más barato.
+
+SELECT PROYECTO, MONTO FROM CONTABILIDAD  WHERE TIPO = 'Venta' AND MONTO = (SELECT MIN(MONTO) FROM CONTABILIDAD WHERE TIPO = 'Venta');
+
+--9. Muestra por pantalla el nombre de cada proveedor junto con el nombre y el precio de su producto más caro
+
+
+--10. Muestra por pantalla los datos del comercial que más ha vendido en un periodo determinado.
+
+SELECT empl.DNI, empl.NOMBRE, empl.TIPO, SUM(contab.MONTO) AS TOTAL_VENTAS FROM CONTABILIDAD contab JOIN EMPLEADO empl ON contab.DNI_EMPLEADO = empl.DNI WHERE contab.TIPO = 'Venta' AND contab.FECHA BETWEEN '2025-02-01' AND '2025-02-28' GROUP BY contab.DNI_EMPLEADO ORDER BY TOTAL_VENTAS DESC LIMIT 1;
+
+--11. Muestra por pantalla los datos del responsable de Marketing que, de media, menos ha vendido en un evento en un periodo determinado.
+
+SELECT empl.DNI, empl.NOMBRE, empl.TIPO, AVG(contab.MONTO) AS MEDIA_VENTAS FROM CONTABILIDAD contab JOIN EMPLEADO empl ON contab.DNI_EMPLEADO = empl.DNI WHERE contab.TIPO = 'Venta' AND contab.FECHA BETWEEN '2025-02-01' AND '2025-02-28' AND empl.TIPO = 'Marketing' GROUP BY contab.DNI_EMPLEADO ORDER BY MEDIA_VENTAS ASC LIMIT 1;
+
+--12. Muestra por pantalla el evento en el que más se ha vendido, a que cliente y quien lo vendió.
+
+--13. Muestra por pantalla la provincia en la que más se ha vendido y en la que menos.
+
+--14. ¿Quién es en Preventa el empleado que más ha vendido?
+
+SELECT empl.DNI, empl.NOMBRE, empl.TIPO, SUM(contab.MONTO) AS TOTAL_VENTAS FROM CONTABILIDAD contab JOIN EMPLEADO empl ON contab.DNI_EMPLEADO = empl.DNI WHERE contab.TIPO = 'PreVenta' GROUP BY contab.DNI_EMPLEADO ORDER BY TOTAL_VENTAS DESC LIMIT 1;
