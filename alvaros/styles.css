@@ -4,21 +4,19 @@
    body {
     margin: 0 auto; /* Centra el contenido horizontalmente */
     font-family: Arial, sans-serif; /* Fuente predeterminada */
-    background-color: #6c3513
-
-    ; /* Color de fondo de la página */
+    background-color: #6c3513; /* Color de fondo de la página */
 }
 
 /* -----------------------------------------------------------------------------
    Encabezado (Header)
    ----------------------------------------------------------------------------- */
-.encabezado {
+.encabezado_alvaro {
     background-color: #372100; /* Color de fondo del encabezado */
     padding: 0%; /* Sin relleno */
 }
 
 /* Barra de navegación */
-.encabezado .barra-navegacion {
+.encabezado_alvaro .barra-navegacion_alvaro {
     display: flex; /* Usa flexbox para la disposición */
     justify-content: space-between; /* Espacio entre los elementos */
     align-items: center; /* Alinea los elementos verticalmente al centro */
@@ -26,28 +24,28 @@
     margin-right: 2%;
 }
 
-.encabezado .logo {
+.encabezado_alvaro .logo_alvaro {
     max-width: 150px; /* Ancho máximo del logo */
     max-height: 150px; /* Alto máximo del logo */
 }
 
-.encabezado .enlaces-navegacion {
+.encabezado_alvaro .enlaces-navegacion_alvaro {
     margin-left: auto; /* Alinea los enlaces a la derecha */
 }
 
-.encabezado .enlace-navegacion {
+.encabezado_alvaro .enlace-navegacion_alvaro {
     padding: 8px; /* Relleno interno de los enlaces */
     color: whitesmoke; /* Color del texto de los enlaces */
 }
 
 /* Contenedor principal del encabezado */
-.encabezado .contenedor-principal {
+.encabezado_alvaro .contenedor-principal_alvaro {
     display: flex; /* Usa flexbox para la disposición */
     justify-content: space-between; /* Espacio entre los elementos */
     padding: 0%; /* Sin relleno */
 }
 
-.encabezado .contenedor-izquierdo {
+.encabezado_alvaro .contenedor-izquierdo_alvaro {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -55,34 +53,34 @@
     width: 60%;
 }
 
-.encabezado .imagen-derecha {
+.encabezado_alvaro .imagen-derecha_alvaro {
     width: 60%;
     height: auto;
     border-top-left-radius: 4%;
 }
 
-.encabezado .titulo {
+.encabezado_alvaro .titulo_alvaro {
     font-size: 2em; /* Tamaño del título */
     margin-bottom: 2%; /* Margen inferior */
     color: #d7b372; /* Color del título */
 }
 
-.encabezado .descripcion {
+.encabezado_alvaro .descripcion_alvaro {
     font-size: 1em; /* Tamaño del texto */
     margin-bottom: 8%; /* Margen inferior */
     color: white;
 }
 
 /* Enlaces dentro del contenedor izquierdo */
-.encabezado .enlaces-contenido {
+.encabezado_alvaro .enlaces-contenido_alvaro {
     margin-bottom: 40px; /* Margen inferior */
 }
 
-.encabezado .enlace-boton {
+.encabezado_alvaro .enlace-boton_alvaro {
     margin-bottom: 20px; /* Margen inferior */
 }
 
-.encabezado .boton-primario {
+.encabezado_alvaro .boton-primario_alvaro {
     background-color: #d7b372; /* Color de fondo del botón primario */
     border-radius: 20px; /* Bordes redondeados */
     color: white; /* Color del texto */
@@ -91,7 +89,7 @@
     text-decoration: none; /* Sin decoración de texto */
 }
 
-.encabezado .boton-secundario {
+.encabezado_alvaro .boton-secundario_alvaro {
     background-color: white; /* Color de fondo del botón secundario */
     border-radius: 20px; /* Bordes redondeados */
     color: #4b5c54; /* Color del texto */
@@ -100,7 +98,7 @@
 }
 
 /* Carrusel de imágenes */
-.encabezado .carrusel {
+.encabezado_alvaro .carrusel_alvaro {
     display: flex; /* Usa flexbox para la disposición */
     flex-direction: column; /* Dirección de la columna */
     width: 100%; /* Ancho del carrusel */
@@ -110,21 +108,21 @@
     position: relative; /* Posición relativa para los botones */
 }
 
-.encabezado .imagen-carrusel {
+.encabezado_alvaro .imagen-carrusel_alvaro {
     width: 100%; /* Ancho máximo de la imagen */
     height: auto;
 }
 
 /* Botones de navegación del carrusel */
-.encabezado .botones-carrusel {
+.encabezado_alvaro .botones-carrusel_alvaro {
     display: flex;
     justify-content: space-between;
     width: 100%;
     margin-top: 10px; /* Espacio entre la imagen y los botones */
 }
 
-.encabezado .boton-anterior,
-.encabezado .boton-siguiente {
+.encabezado_alvaro .boton-anterior_alvaro,
+.encabezado_alvaro .boton-siguiente_alvaro {
     border-radius: 50%; /* Bordes redondeados */
     background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
     color: white; /* Color del texto */
@@ -132,16 +130,16 @@
     padding: 10px; /* Relleno interno */
 }
 
-.encabezado .boton-anterior {
+.encabezado_alvaro .boton-anterior_alvaro {
     margin-right: auto; /* Alinea el botón anterior a la izquierda */
 }
 
-.encabezado .boton-siguiente {
+.encabezado_alvaro .boton-siguiente_alvaro {
     margin-left: auto; /* Alinea el botón siguiente a la derecha */
 }
 
 /* Contenedor derecho del encabezado */
-.encabezado .imagen-derecha {
+.encabezado_alvaro .imagen-derecha_alvaro {
     max-height: 100%; /* Alto máximo de la imagen */
     max-width: 100%; /* Ancho máximo de la imagen */
     object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
@@ -151,40 +149,40 @@
 /* -----------------------------------------------------------------------------
    Sección 2 (Section)
    ----------------------------------------------------------------------------- */
-.seccion-secundaria {
+.seccion-secundaria_alvaro {
     padding: 2%; /* Relleno interno */
     background-color: rgb(225, 225, 225); /* Color de fondo blanco */
 }
 
-.seccion-secundaria .titulo-seccion {
+.seccion-secundaria_alvaro .titulo-seccion_alvaro {
     color: #372100; /* Color del título */
     text-align: center; /* Alinea el texto al centro */
     font-size: xx-large;
 }
 
-.seccion-secundaria .texto-seccion {
+.seccion-secundaria_alvaro .texto-seccion_alvaro {
     text-align: center; /* Alinea el texto al centro */
     margin-bottom: 30px; /* Margen inferior */
 }
 
-.seccion-secundaria .galeria-imagenes {
+.seccion-secundaria_alvaro .galeria-imagenes_alvaro {
     display: flex; /* Usa flexbox para la disposición */
     flex-direction: column; /* Dirección de la columna */
 }
 
-.seccion-secundaria .fila-imagenes {
+.seccion-secundaria_alvaro .fila-imagenes_alvaro {
     display: flex; /* Usa flexbox para la disposición */
     justify-content: space-between; /* Espacio entre las imágenes */
     margin-bottom: 2%; /* Margen inferior */
 }
 
-.seccion-secundaria .imagen-grande {
+.seccion-secundaria_alvaro .imagen-grande_alvaro {
     width: 68%; /* Ancho de la imagen grande en porcentaje */
     height: auto; /* Alto automático para mantener la proporción */
     border-radius: 20PX;
 }
 
-.seccion-secundaria .imagen-pequena {
+.seccion-secundaria_alvaro .imagen-pequena_alvaro {
     width: 30%; /* Ancho de la imagen pequeña en porcentaje */
     height: auto; /* Alto automático para mantener la proporción */
     border-radius: 20PX;
@@ -193,193 +191,182 @@
 /* -----------------------------------------------------------------------------
    Sección 3 (Section)
    ----------------------------------------------------------------------------- */
-.seccion-terciaria {
+.seccion-terciaria_alvaro {
     padding: 5%; /* Relleno interno */
     background-color: #c0a363 ;
     display: flex; /* Usa flexbox para la disposición */
 }
 
-.seccion-terciaria .caja {
+.seccion-terciaria_alvaro .caja_alvaro {
     width: 30%;
     margin: 1%; /* Espacio entre las cajas */
     text-align: center; /* Centra el texto */
 }
 
-.seccion-terciaria .caja .imagen-caja {
+.seccion-terciaria_alvaro .caja_alvaro .imagen-caja_alvaro {
     width: 25%; /* Ajusta el ancho de la imagen al contenedor */
 }
 
-.seccion-terciaria .caja .titulo-caja {
+.seccion-terciaria_alvaro .caja_alvaro .titulo-caja_alvaro {
     margin-top: 10px; /* Espacio superior para el título */
     font-size: 1.5em; /* Tamaño de fuente */
     color: #000000; /* Color del texto */
 }
 
-.seccion-terciaria .caja .texto-caja {
+.seccion-terciaria_alvaro .caja_alvaro .texto-caja_alvaro {
     margin-top: 10px; /* Espacio superior para el párrafo */
     font-size: 1em; /* Tamaño de fuente */
     color: #ffffff; /* Color del texto */
 }
 
-.seccion-terciaria .caja .enlace-caja {
-    color: #a99166;
+.seccion-terciaria_alvaro .caja_alvaro .enlace-caja_alvaro {
+    color: #040404;
 }
-
-
 
 /* -----------------------------------------------------------------------------
    Sección 5 (Section)
    ----------------------------------------------------------------------------- */
-.seccion-quinta {
+.seccion-quinta_alvaro {
     padding: 5%; /* Relleno interno */
     background-color:  #452a01;
     display: flex; /* Usa flexbox para la disposición */
+    color: aliceblue;
+    
 }
 
-.seccion-quinta .contenedor {
+.seccion-quinta_alvaro .contenedor_alvaro {
     width: 30%;
 }
 
-.seccion-quinta .texto-contenedor {
+.seccion-quinta_alvaro .texto-contenedor_alvaro {
     padding: 8%;
-    width: 70%;
-}
-
-.seccion-quinta .titulo-seccion {
-    color: #745f3d;
-    font-size: 1.5em; /* Tamaño de fuente */
-}
-
-.seccion-quinta .texto-seccion {
-    color: #717a80;
 }
 
 /* -----------------------------------------------------------------------------
    Sección 7 (Section)
    ----------------------------------------------------------------------------- */
-.seccion-septima {
-    background-color: whitesmoke;
-    padding: 1%;
-    text-align: center;
-    color: #485d56;
-    font-size: 1.5em; /* Tamaño de fuente */
-}
-
-.seccion-septima .titulo-seccion {
-    color: #485d56;
-    font-size: 1.5em; /* Tamaño de fuente */
-}
-
-.seccion-septima .caja {
-    object-fit: cover;
+.seccion-septima_alvaro {
+    padding: 5%; /* Relleno interno */
+    background-color: rgb(225, 225, 225); /* Color de fondo blanco */
     display: flex; /* Usa flexbox para la disposición */
-    flex-direction: row; /* Dirección de la fila */
-    align-content: center;
-    text-align: center;
-    margin-left: 3%;
-    margin-right: 3%;
+    flex-direction: column; /* Dirección de la columna */
+    align-items: center; /* Centra horizontalmente */
 }
 
-.seccion-septima .imagen-caja {
-    width: 16%;
-    height: auto;
-    border-radius: 20px; /* Bordes redondeados */
-    margin: 2%;
+.seccion-septima_alvaro .titulo-seccion_alvaro {
+    color: #372100; /* Color del título */
+    text-align: center; /* Alinea el texto al centro */
+    font-size: xx-large;
+    margin-bottom: 20px; /* Espacio inferior para separar del contenido */
 }
 
+.seccion-septima_alvaro .caja_alvaro {
+    display: flex; /* Usa flexbox para la disposición */
+    justify-content: space-around; /* Distribuye el espacio alrededor de los elementos */
+    width: 100%; /* Ancho del contenedor */
+   
+    margin: 0 auto; /* Centra el contenedor */
+}
+
+.seccion-septima_alvaro .caja_alvaro .imagen-caja_alvaro {
+    width: 16%; /* Ajusta el ancho de la imagen */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 5%; /* Hace la imagen redonda */
+    object-fit: cover; /* Cubre el espacio asignado */
+}
 
 /* -----------------------------------------------------------------------------
    Pie de página (Footer)
    ----------------------------------------------------------------------------- */
-.pie-de-pagina {
-    background-color:#250f00; /* Color de fondo */
+.pie-de-pagina_alvaro {
+    background-color: #372100; /* Color de fondo del pie de página */
     color: white; /* Color del texto */
-    padding: 5%;
+    padding: 2%; /* Relleno interno */
 }
 
-.pie-de-pagina .contenedor-principal {
+.pie-de-pagina_alvaro .contenedor-principal_alvaro {
     display: flex; /* Usa flexbox para la disposición */
     justify-content: space-between; /* Espacio entre los elementos */
-    align-items: flex-start; /* Alinea los elementos al inicio verticalmente */
+    padding: 1%;
 }
 
-.pie-de-pagina .contenido-izquierdo {
-    flex: 1; /* Ocupa el espacio disponible */
+.pie-de-pagina_alvaro .contenido-izquierdo_alvaro {
+    width: 45%; /* Ancho del contenido izquierdo */
 }
 
-.titulo-pie {
-    font-size: 2em; /* Tamaño del título */
+.pie-de-pagina_alvaro .titulo-pie_alvaro {
+    font-size: 1.5em; /* Tamaño del título */
     margin-bottom: 10px; /* Margen inferior */
 }
 
-.texto-pie {
-    margin: 5px 0; /* Margen superior e inferior */
+.pie-de-pagina_alvaro .texto-pie_alvaro {
+    margin-bottom: 5px; /* Margen inferior */
 }
 
-.iconos-redes {
-    display: flex; /* Usa flexbox para la disposición */
-    align-items: center; /* Alinea los elementos verticalmente al centro */
+.pie-de-pagina_alvaro .iconos-redes_alvaro {
     margin-top: 20px; /* Margen superior */
 }
 
-.iconos-redes p {
+.pie-de-pagina_alvaro .iconos-redes_alvaro .enlace-red_alvaro {
+    display: inline-block; /* Muestra los enlaces en línea */
     margin-right: 10px; /* Margen derecho */
 }
 
-.enlace-red {
-    margin-right: 10px; /* Margen derecho */
+.pie-de-pagina_alvaro .iconos-redes_alvaro .enlace-red_alvaro img {
+    width: 30px; /* Ancho de los iconos */
+    height: 30px; /* Alto de los iconos */
 }
 
-.iconos-redes img {
-    width: 24px; /* Ancho de los iconos */
-    height: 24px; /* Alto de los iconos */
+.pie-de-pagina_alvaro .contenido-derecho_alvaro {
+    width: 45%; /* Ancho del contenido derecho */
 }
 
-.contenido-derecho {
-    flex: 1; /* Ocupa el espacio disponible */
-}
-
-.formulario-contacto {
+.pie-de-pagina_alvaro .formulario-contacto_alvaro {
     display: flex; /* Usa flexbox para la disposición */
     flex-direction: column; /* Dirección de la columna */
 }
 
-.entrada-formulario,
-.area-texto-formulario {
+.pie-de-pagina_alvaro .formulario-contacto_alvaro .entrada-formulario_alvaro,
+.pie-de-pagina_alvaro .formulario-contacto_alvaro .area-texto-formulario_alvaro {
     margin-bottom: 10px; /* Margen inferior */
-    padding: 10px; /* Relleno interno */
+    padding: 8px; /* Relleno interno */
     border: 1px solid #ccc; /* Borde */
-    border-radius: 20px; /* Bordes redondeados */
-    background-color: white; /* Color de fondo */
-    color: black; /* Color del texto */
-    width: 60%;
-    align-self: self-end;
+    border-radius: 4px; /* Bordes redondeados */
 }
 
-.area-texto-formulario {
-    height: 100px; /* Alto del área de texto */
-    padding: 2%;
+.pie-de-pagina_alvaro .formulario-contacto_alvaro .area-texto-formulario_alvaro {
+    resize: vertical; /* Permite redimensionar verticalmente */
 }
 
-.boton-formulario {
-    align-self: self-end;
-    width: 20%;
-    padding: 2%; /* Relleno interno */
-    border-radius: 20px; /* Bordes redondeados */
-    background-color: #c0a363; /* Color de fondo */
+.pie-de-pagina_alvaro .formulario-contacto_alvaro .boton-formulario_alvaro {
+    background-color: #d7b372; /* Color de fondo del botón */
     color: white; /* Color del texto */
+    padding: 10px 20px; /* Relleno interno */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
 }
 
-.boton-formulario:hover {
-    background-color: #a89259; /* Color de fondo al pasar el ratón */
+.pie-de-pagina_alvaro .contenedor-inferior_alvaro {
+    text-align: center; /* Centra el texto */
+    margin-top: 20px; /* Margen superior */
 }
 
-.contenedor-inferior {
-    text-align: center;
-    padding: 2%;
+.pie-de-pagina_alvaro .contenedor-inferior_alvaro .enlaces-navegacion_alvaro .enlace-navegacion_alvaro {
+    color: white; /* Color del texto de los enlaces */
+    text-decoration: none; /* Sin decoración de texto */
+    padding: 0 10px; /* Relleno interno */
 }
 
-.contenedor-inferior .enlace-navegacion {
-    color: white;
-    padding: 1%;
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .pie-de-pagina_alvaro .contenedor-principal_alvaro {
+        flex-direction: column; /* Apila los elementos verticalmente */
+    }
+
+    .pie-de-pagina_alvaro .contenido-izquierdo_alvaro,
+    .pie-de-pagina_alvaro .contenido-derecho_alvaro {
+        width: 100%; /* Ancho completo */
+        margin-bottom: 20px; /* Margen inferior */
+    }
 }
