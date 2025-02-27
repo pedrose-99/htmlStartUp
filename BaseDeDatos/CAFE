@@ -207,8 +207,10 @@ SELECT empl.DNI, empl.NOMBRE, empl.TIPO, AVG(contab.MONTO) AS MEDIA_VENTAS FROM 
 
 --12. Muestra por pantalla el evento en el que más se ha vendido, a que cliente y quien lo vendió.
 
+
 --13. Muestra por pantalla la provincia en la que más se ha vendido y en la que menos.
+
 
 --14. ¿Quién es en Preventa el empleado que más ha vendido?
 
-SELECT empl.DNI, empl.NOMBRE, empl.TIPO, SUM(contab.MONTO) AS TOTAL_VENTAS FROM CONTABILIDAD contab JOIN EMPLEADO empl ON contab.DNI_EMPLEADO = empl.DNI WHERE contab.TIPO = 'PreVenta' GROUP BY contab.DNI_EMPLEADO ORDER BY TOTAL_VENTAS DESC LIMIT 1;
+SELECT empl.DNI, empl.NOMBRE, empl.TIPO, SUM(contab.MONTO) AS TOTAL_VENTAS FROM CONTABILIDAD contab JOIN EMPLEADO empl ON contab.DNI_EMPLEADO = empl.DNI WHERE contab.TIPO = 'Preventa' GROUP BY contab.DNI_EMPLEADO ORDER BY TOTAL_VENTAS DESC LIMIT 1;
