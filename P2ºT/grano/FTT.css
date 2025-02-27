@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+
+    font-weight: 400;
+    font-style: normal;
+    box-sizing: border-box;
+
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/pexels-goumbik-1419931.jpg);
+    background-size: cover;
+    height: 400px;
+
+}
+
+
+.text {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    margin-left: 900px;
+
+}
+
+/*secion 1*/
+
+
+.seccion1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(/pexels-polina-tankilevitch-4109751.jpg);
+    background-size: cover;
+    background-position: top;
+    height: auto;
+    width: 100%;
+    padding: 25px;
+    box-sizing: border-box;
+    /* padding: 200px;
+    gap: 170px;
+    height: 200px; */
+    /* Asegúrate de que el ancho y el alto sean iguales */
+}
+
+
+.texto1 {
+
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-right: 200px;
+    width: 60%;
+    margin-left: 80px;
+   
+
+}
+
+.h3_1 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 30px;
+    color: #331809;
+   
+
+    
+}
+.href {
+    text-decoration: none;
+    color: inherit;
+    color: rgb(184, 142, 86);
+
+}
+
+.p_1 {
+
+    font-size: medium;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    font-size: 20px;
+    color: #331809;
+
+
+}
+
+.seccionvideo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+ 
+  
+
+
+
+}
+
+.video {
+    font-size: medium;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 400px;
+  
+
+}
+
+
+
+
+/* seccion2 */
+
+
+
+.seccion2 {
+    background-image: url(/pexels-cottonbro-3584972.jpg);
+    background-size: cover;
+    background-position: top;
+    object-fit: cover;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    width: 100%;    
+    padding: 200px;
+    gap: 100px;
+    height: 200px;
+    box-sizing: border-box;
+    /* Asegúrate de que el ancho y el alto sean iguales */
+   
+
+}
+
+.texto2 {
+
+    font-size: 20px;
+    justify-content: center;
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+   margin-right: 700px;
+}
+
+
+
+
+/* seccion3 */
+
+
+.seccion3 {
+    background-image: url(/2pexels-goumbik-942809.jpg);
+    background-size: cover;
+    background-position: top;
+    object-fit: cover;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 200px;
+    gap: 200px;
+    height: 200px;
+    /* Asegúrate de que el ancho y el alto sean iguales */
+
+
+
+}
+
+
+.texto3 {
+    margin-top: 50px;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+    
+
+}
+
+
+
+/* seccion 4 */
+
+
+.seccion4 {
+    background-size: cover;
+    background-position: top;
+    object-fit: cover;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 200px;
+    gap: 100px;
+    height: 200px;
+
+    /* Asegúrate de que el ancho y el alto sean iguales */
+
+}
+
+.texto4 {
+
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.img4 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+    width: 100%;
+    width: 500px;
+    /* Asegura que la imagen ocupe todo el contenedor */
+    height: 500px;
+    /* Mantiene la proporción de la imagen */
+    object-fit: cover;
+    /* Asegura que la imagen cubra todo el espacio */
+    border-radius: 10%;
+
+
+}
