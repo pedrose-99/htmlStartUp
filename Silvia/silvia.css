@@ -51,13 +51,13 @@ body{
     padding-left: 20px;
     border-bottom-left-radius: 20px ;
 }
-
 .menu1{
     text-decoration: none;
     color:white;
 }
 .menu1:hover{
-    color:rgb(237, 176, 62);
+    color:rgb(233, 147, 35);
+    transition-duration: 0.3s;
 }
 .eslogan .h1{
     font-size: 60px;
@@ -236,7 +236,7 @@ body{
 .Informate{
     font-size: 60px;
     text-align: center;
-    color:rgb(95, 55, 35);
+    color:rgb(45, 32, 18);
 }
 .noticiasLista{
     display:flex;
@@ -252,10 +252,13 @@ body{
     max-height: 598px;
     min-height: 598px;
     text-align: center;
+    filter: brightness(50%);
+    font-size: 40px;
 }
 .noticia1:hover{
-    filter:brightness(50%);
+    filter:brightness(100%);
     transition-duration: 0.4s;
+    font-size: 50px;
 }
 .noticia2{
     display:flex;
@@ -272,10 +275,24 @@ body{
     min-height: 282px;
     text-align: left;
     color:white;
+    filter: brightness(50%);
+    margin-bottom: 16px;
+    font-size: 25px;
+}
+.noticiaA{
+    text-align: left;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.832);
+    padding: 20px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    margin-right: 40px;
 }
 .noticia21:hover{
-    filter:brightness(50%);
+    filter:brightness(100%);
     transition-duration: 0.4s;
+    font-size: 28px;
+    
 }
 .noticia22{
     background-image: url(Imagenes/Cafe7.jpg);
@@ -287,10 +304,23 @@ body{
     min-height: 284px;
     text-align: left;
     color:white;
+    filter: brightness(50%);
+    margin-top: 16px;
+    font-size: 25px;
+}
+.noticiaB{
+    text-align: left;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.814);
+    padding: 20px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    margin-right: 40px;
 }
 .noticia22:hover{
-    filter:brightness(50%);
+    filter:brightness(100%);
     transition-duration: 0.4s;
+    font-size: 30px;
 }
 .noticia3{
     background-image: url(Imagenes/Cafe8.jpg);
@@ -301,10 +331,13 @@ body{
     max-height: 598px;
     min-height: 598px;
     text-align: center;
+    filter: brightness(50%);
+    font-size: 40px;
 }
 .noticia3:hover{
-    filter:brightness(50%);
+    filter:brightness(100%);
     transition-duration: 0.4s;
+    font-size: 50px;
 }
 .textoNoticias{
     font-size: 40px;

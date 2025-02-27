@@ -47,6 +47,11 @@ body{
     padding-right: 710px;
     padding-left: 750px;
 }
+.envio:hover{
+    background-color: rgb(103, 79, 37);
+    color:black;
+    transition-duration: 0.4s;
+}
 .textoEnviar{
     display: flex;
     align-items: center;
