@@ -1,4 +1,3 @@
---Creación Tablas
 
 --Tabla Cliente
 CREATE TABLE CLIENTE (DNI TEXT(9) UNIQUE NOT NULL, NOMBRE TEXT(30), DIRECCION TEXT(40), CIUDAD TEXT(15), PROVINCIA TEXT(15), PAIS TEXT(15), TELEFONO TEXT(9), EMAIL TEXT(25), PRIMARY KEY (DNI));
@@ -22,8 +21,6 @@ CREATE TABLE SUMINISTRA (ID_PRODUCTO TEXT(9), NIF_PROVEEDOR TEXT(9), CANTIDAD IN
 --Tabla Contabilidad
 
 CREATE TABLE CONTABILIDAD (ID_PRODUCTO TEXT(9), DNI_CLIENTE TEXT(9), DNI_EMPLEADO TEXT(9), FECHA date, TIPO TEXT(30), MONTO REAL(8,2), EVENTO TEXT(50), PROYECTO TEXT(50),  FOREIGN KEY (ID_PRODUCTO) REFERENCES PRODUCTO(ID_PRODUCTO), FOREIGN KEY (DNI_CLIENTE) REFERENCES CLIENTE(DNI), FOREIGN KEY (DNI_EMPLEADO) REFERENCES EMPLEADO(DNI),PRIMARY KEY (ID_PRODUCTO, DNI_CLIENTE, DNI_EMPLEADO, FECHA));
-
-
 
 --Insertar valores en tablas
 
@@ -143,7 +140,6 @@ INSERT INTO CONTABILIDAD (ID_PRODUCTO, DNI_CLIENTE, DNI_EMPLEADO, FECHA, TIPO, M
 ('CAF000007', '777888999', '707808909', '2025-02-27', 'Venta', 5.99, 'Compra directa', 'Regalo corporativo'),
 ('CAF000010', '777888999', '010111212', '2025-02-28', 'Venta', 20.99, 'Pedido programado', 'Café gourmet');
 
--- Cliente 222333444 (Carlos Gómez) compra varios productos
 INSERT INTO CONTABILIDAD (ID_PRODUCTO, DNI_CLIENTE, DNI_EMPLEADO, FECHA, TIPO, MONTO, EVENTO, PROYECTO) VALUES
 ('CAF000001', '222333444', '101202303', '2025-02-11', 'Venta', 12.99, 'Compra minorista', 'Café para oficina'),
 ('CAF000002', '222333444', '202303404', '2025-02-12', 'Venta', 8.49, 'Pedido online', 'Desayunos salud');
@@ -160,31 +156,36 @@ INSERT INTO CONTABILIDAD (ID_PRODUCTO, DNI_CLIENTE, DNI_EMPLEADO, FECHA, TIPO, M
 ('CAF000009', '999000111', '808909010', '2025-02-28', 'Preventa', 13.49, 'Reserva de stock', 'Café con notas de chocolate'),
 ('CAF000010', '123789456', '909010111', '2025-02-29', 'Preventa', 20.99, 'Promoción especial', 'Café especialidad');
 
+
 --Consultas
 
 --1. Selecciona los nombres de cliente y los precios de todos los proyectos vendidos
 
-SELECT client.NOMBRE, contab.MONTO, contab.PROYECTO FROM CONTABILIDAD contab JOIN CLIENTE client ON contab.DNI_CLIENTE = client.DNI WHERE contab.TIPO = 'Venta';
+SELECT CLIENTE.NOMBRE, CONTABILIDAD.MONTO, CONTABILIDAD.PROYECTO FROM CONTABILIDAD  JOIN CLIENTE  ON CONTABILIDAD.DNI_CLIENTE = CLIENTE.DNI WHERE CONTABILIDAD.TIPO = 'Venta' OR CONTABILIDAD.TIPO = 'PreVenta';
+
 
 --2. Calcula el precio medio de todos los proyectos vendidos a un cliente determinado
 
-SELECT client.nombre, AVG(contab.MONTO) AS PRECIO_MEDIO FROM CONTABILIDAD contab JOIN CLIENTE client ON contab.DNI_CLIENTE = client.DNI WHERE contab.DNI_CLIENTE = '111222333' AND contab.TIPO = 'Venta';
+SELECT client.nombre, AVG(contab.MONTO) AS PRECIO_MEDIO FROM CONTABILIDAD contab JOIN CLIENTE client ON contab.DNI_CLIENTE = client.DNI WHERE contab.DNI_CLIENTE = '111222333' AND (contab.TIPO = 'Venta' OR contab.TIPO = 'PreVenta');
+
 
 --3. Calcula el precio medio de todos los proyectos para un cliente en una fecha determinada
 
-SELECT client.nombre, AVG(contab.MONTO) AS PRECIO_MEDIO FROM CONTABILIDAD contab JOIN CLIENTE client ON contab.DNI_CLIENTE = client.DNI WHERE contab.DNI_CLIENTE = '111222333' AND contab.TIPO = 'Venta' and contab.FECHA = '2025-02-20';
+SELECT client.nombre, AVG(contab.MONTO) AS PRECIO_MEDIO FROM CONTABILIDAD contab JOIN CLIENTE client ON contab.DNI_CLIENTE = client.DNI WHERE contab.DNI_CLIENTE = '444555666' AND (contab.TIPO = 'Venta' OR contab.TIPO = 'PreVenta') and contab.FECHA = '2025-02-23';
+
 
 --4. Muestra por pantalla el nombre y el precio de todos los proyectos con un precio mayor o igual a la media, y que aparezcan por pantalla ordenados de menor a mayor precio.
 
-SELECT client.NOMBRE, contab.MONTO, contab.PROYECTO FROM CONTABILIDAD contab JOIN CLIENTE client ON contab.DNI_CLIENTE = client.DNI WHERE contab.TIPO = 'Venta' and contab.Monto >= (SELECT AVG(contab.MONTO) FROM CONTABILIDAD contab WHERE contab.TIPO = 'Venta');
+SELECT PROYECTO, MONTO FROM CONTABILIDAD  WHERE (TIPO = 'Venta' OR TIPO = 'PreVenta') and MONTO >= (SELECT AVG(MONTO) FROM CONTABILIDAD  WHERE (TIPO = 'Venta' OR TIPO = 'PreVenta'));
 
 --5. Muestra por pantalla todos los datos de un proyecto, incluidos todos los datos del proveedor necesario para realizar el proyecto al cliente de la start up
 
-
+SELECT contab.ID_PRODUCTO, contab.DNI_EMPLEADO, contab.PROYECTO, product.INFORMACION AS PRODUCTO, product.PRECIO, suminist.NIF_PROVEEDOR, prov.NOMBRE AS PROVEEDOR, prov.TELEFONO AS TEL_PROVEEDOR
+FROM CONTABILIDAD contab JOIN PRODUCTO product ON contab.ID_PRODUCTO = product.ID_PRODUCTO JOIN SUMINISTRA suminist ON product.ID_PRODUCTO = suminist.ID_PRODUCTO JOIN PROVEEDOR prov ON suminist.NIF_PROVEEDOR = prov.NIF_PROVEEDOR WHERE contab.PROYECTO = 'Café gourmet';
 
 --6. Muestra por pantalla el precio promedio de los productos de cada proveedor, mostrando solo el código del proveedor
 
-SELECT suminist.NIF_PROVEEDOR, AVG(product.PRECIO) AS PRECIO_PROMEDIO FROM SUMINISTRA suminist JOIN PRODUCTO product ON suminist.ID_PRODUCTO = product.ID_PRODUCTO GROUP BY suminst.NIF_PROVEEDOR;
+SELECT suminist.NIF_PROVEEDOR, AVG(product.PRECIO) AS PRECIO_MEDIO FROM SUMINISTRA suminist JOIN PRODUCTO product ON suminist.ID_PRODUCTO = product.ID_PRODUCTO GROUP BY suminist.NIF_PROVEEDOR;
 
 --7. Muestra por pantalla los nombres de los proveedores cuyos productos tengan un precio promedio mayor o igual a uno que consideréis
 
@@ -192,24 +193,32 @@ SELECT prov.NOMBRE FROM SUMINISTRA suminist JOIN PRODUCTO product ON suminist.ID
 
 --8.Muestra por pantalla el nombre y el precio del proyecto más barato.
 
-SELECT PROYECTO, MONTO FROM CONTABILIDAD  WHERE TIPO = 'Venta' AND MONTO = (SELECT MIN(MONTO) FROM CONTABILIDAD WHERE TIPO = 'Venta');
+SELECT PROYECTO, MONTO FROM CONTABILIDAD  WHERE (TIPO = 'Venta' OR TIPO = 'PreVenta') AND MONTO = (SELECT MIN(MONTO) FROM CONTABILIDAD WHERE (TIPO = 'Venta' OR TIPO = 'PreVenta'));
 
 --9. Muestra por pantalla el nombre de cada proveedor junto con el nombre y el precio de su producto más caro
 
+SELECT prov.NOMBRE AS PROVEEDOR, product.INFORMACION AS PRODUCTO, product.PRECIO FROM PROVEEDOR prov JOIN SUMINISTRA suminist ON prov.NIF_PROVEEDOR = suminist.NIF_PROVEEDOR JOIN PRODUCTO product ON suminist.ID_PRODUCTO = product.ID_PRODUCTO WHERE product.PRECIO = (SELECT MAX(productAux.PRECIO) FROM SUMINISTRA suministAux JOIN PRODUCTO productAux ON suministAux.ID_PRODUCTO = productAux.ID_PRODUCTO WHERE suministAux.NIF_PROVEEDOR = prov.NIF_PROVEEDOR);
 
 --10. Muestra por pantalla los datos del comercial que más ha vendido en un periodo determinado.
 
-SELECT empl.DNI, empl.NOMBRE, empl.TIPO, SUM(contab.MONTO) AS TOTAL_VENTAS FROM CONTABILIDAD contab JOIN EMPLEADO empl ON contab.DNI_EMPLEADO = empl.DNI WHERE contab.TIPO = 'Venta' AND contab.FECHA BETWEEN '2025-02-01' AND '2025-02-28' GROUP BY contab.DNI_EMPLEADO ORDER BY TOTAL_VENTAS DESC LIMIT 1;
+SELECT empl.DNI, empl.NOMBRE, empl.TIPO, SUM(contab.MONTO) AS TOTAL_VENTAS FROM CONTABILIDAD contab JOIN EMPLEADO empl ON contab.DNI_EMPLEADO = empl.DNI WHERE (contab.TIPO = 'Venta' OR contab.TIPO = 'PreVenta' )AND contab.FECHA BETWEEN '2025-02-01' AND '2025-02-28' GROUP BY contab.DNI_EMPLEADO ORDER BY TOTAL_VENTAS DESC LIMIT 1;
 
 --11. Muestra por pantalla los datos del responsable de Marketing que, de media, menos ha vendido en un evento en un periodo determinado.
 
-SELECT empl.DNI, empl.NOMBRE, empl.TIPO, AVG(contab.MONTO) AS MEDIA_VENTAS FROM CONTABILIDAD contab JOIN EMPLEADO empl ON contab.DNI_EMPLEADO = empl.DNI WHERE contab.TIPO = 'Venta' AND contab.FECHA BETWEEN '2025-02-01' AND '2025-02-28' AND empl.TIPO = 'Marketing' GROUP BY contab.DNI_EMPLEADO ORDER BY MEDIA_VENTAS ASC LIMIT 1;
+SELECT empl.DNI, empl.NOMBRE, empl.TIPO, AVG(contab.MONTO) AS MEDIA_VENTAS FROM CONTABILIDAD contab JOIN EMPLEADO empl ON contab.DNI_EMPLEADO = empl.DNI WHERE (contab.TIPO = 'Venta' OR contab.TIPO = 'PreVenta' ) AND contab.FECHA BETWEEN '2025-02-01' AND '2025-02-28' AND empl.TIPO = 'Marketing' GROUP BY contab.DNI_EMPLEADO ORDER BY MEDIA_VENTAS ASC LIMIT 1;
 
 --12. Muestra por pantalla el evento en el que más se ha vendido, a que cliente y quien lo vendió.
 
+SELECT contab.EVENTO, client.NOMBRE AS Cliente, E.NOMBRE AS Empleado, SUM(contab.MONTO) AS TotalVentas FROM CONTABILIDAD contab JOIN CLIENTE client ON contab.DNI_CLIENTE = client.DNI JOIN EMPLEADO E ON contab.DNI_EMPLEADO = E.DNI WHERE (contab.TIPO = 'Venta' OR contab.TIPO = 'PreVenta' ) GROUP BY contab.EVENTO, client.NOMBRE, E.NOMBRE ORDER BY TotalVentas DESC LIMIT 1;
 
 --13. Muestra por pantalla la provincia en la que más se ha vendido y en la que menos.
 
+--Mas ha vendido:
+
+SELECT client.PROVINCIA AS ProvinciaMasVendido, SUM(contab.MONTO) AS TotalVentas FROM CONTABILIDAD contab JOIN CLIENTE client ON contab.DNI_CLIENTE = client.DNI WHERE (contab.TIPO = 'Venta' OR contab.TIPO = 'PreVenta' ) GROUP BY client.PROVINCIA ORDER BY TotalVentas DESC LIMIT 1;
+
+--Menos ha vendido
+SELECT client.PROVINCIA AS ProvinciaMenosVendido, SUM(contab.MONTO) AS TotalVentas FROM CONTABILIDAD contab JOIN CLIENTE client ON contab.DNI_CLIENTE = client.DNI WHERE (contab.TIPO = 'Venta' OR contab.TIPO = 'PreVenta' ) GROUP BY client.PROVINCIA ORDER BY TotalVentas ASC LIMIT 1;
 
 --14. ¿Quién es en Preventa el empleado que más ha vendido?
 
