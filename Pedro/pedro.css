@@ -1,162 +1,88 @@
 *{
-    margin:0;
-    padding: 0;
+
     box-sizing: border-box;
+    font-size: 'Balsamic Sans';
+
+
 }
 
 body{
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
+    background-image: url(imagenes/fondoCafe.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
-.container{
-    position: relative;
-    width: 100%;
-    max-width: 400%;
-    background-color: rgba(236,134,0,0.8);
-    padding: 30px;
-    overflow: 10px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px black;
-}
 
-.heading{
+.header_pedro{
     text-align: center;
-    font-size: 40px;
+    background-color: #bb640d;
     color: black;
-    margin-bottom: 50px;
-}
-
-label{
-    display: block;
-    font-size: 12px;
-    margin-bottom: 10px;
-    color: black;
-}
-
-select{
-    width: 100%;
-    padding: 10px;
-    text-transform: capitalize;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    background-color: white;
-    color: black;
-    font-size: 14px;
-}
-
-.btn{
-    width: 100%;
-    height: 60px;
-    background-color: black;
-    border: none;
-    color: white;
     border-radius: 10px;
-    margin-top: 50px;
-    font-size: 18px;
-    font-weight: 500;
-    cursor:pointer
-    transition: all 0.5s linear;
+    padding: 5px 0;
+    background-size: cover;
 }
 
-.btn:hover{
-    background-color: rgba(141, 101, 48, 0.8);
+
+.container_pedro{
+    max-width: 700px;
+    margin:auto;
+    padding: 20px;
+}
+
+.section_pedro{
+    border:2px solid #bb640d;
+    border-radius: 10px;
+    padding: 10px;
+    margin:10px 0;
+    margin-bottom: 20px;
+}
+
+.label_pedro{
+    display: block;
+    padding: 7px;
+    border-radius: 7px;
+    cursor: pointer;
+    border: 1px dashed black;
+    margin-top: 3px;
+}
+
+.label_pedro:hover{
+    background: orange;
+}
+
+
+.btn_pedro{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding: 10px;
+
+    background-color: #bb640d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.btn_pedro:hover{
+    background: orange;
     color:black;
 }
 
-.btn:disabled{
-    cursor: not-allowed;
-    background-color: rgba(236,134,0,0.8);
+#resultadopedro{
+    font-size: 90px;
+    color: darkred;
 }
 
-.hide{
-    display: none;
-}
-
-.quizz .number{
-    color:white;
-    font-size: 25px;
-    font-weight: 500;
-    margin-bottom: 20px;
-}
-
-
-.quiz .number{
-    color: gray;
-    font-size: 18px;
-}
-
-.question{
-    color: white;
-    font-size: 20px;
-    font-weight: 500;
-    margin-bottom: 20px;
-}
-
-.answer-wrapper .answer{
-    width: 100%;
-    height: 60px;
-    padding: 20px;
-    border-radius: 10px;
-    color:white;
-    border: 3px solid gray;
-    display: flex;
+#imagenpedro{
     align-items: center;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    cursor: pointer;
-    transition: 0.3s linear;
 }
 
-.answer .checkbox{
-    width: 20px;
-    height: 20px;
-    font-size: 12px;
-    border-radius: 50%;
-    border: 3px solid gray;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    transition: all 0.3s;
-}
-
-.answer .checkbox.icon{
-    opacity: 0;
-}
-
-.answer:hover .checkbox,
-.answer.selected .checkbox{
-    background-color: black;
-    border-color: black;
-}
-
-.answer.selected .checkbox .icon{
-    opacity: 1;
-}
-
-answer.correct{
-    border-color: green;
-}
-
-.btn.next{
-    display: none;
-}
-
-.end-screen .score{
-    color: white;
-    font-size: 25px;
-    font-weight: 500;
-    margin-bottom: 80px;
-    text-align: center;
-}
-
-.end-screen .score-text{
-    color: blue;
-    font-size: 16px;
-    margin-bottom: 120px;
+#textpedro{
+    size: 50px;
+    color: black;
 }
 
 @media (max-width:468) {
