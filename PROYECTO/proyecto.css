@@ -1,0 +1,1550 @@
+/*CSS PAGINA PRINCIPAL*/
+
+html{
+    scroll-behavior: smooth;
+}
+
+.body_silvia{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    color:white;
+}
+.header_silvia{
+    background-image: url(Imagenes/Cafe1.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+.inicio{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo img{
+    display: flex;
+    position: fixed;
+    max-width: 200px;
+    min-width: 200px;
+    margin-top: -100px;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-right: 20px;
+    position: fixed;
+    top:0;
+    right: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.296);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    border-bottom-left-radius: 20px ;
+}
+.menu1{
+    text-decoration: none;
+    color:white;
+}
+.menu1:hover{
+    color:rgb(233, 147, 35);
+    transition-duration: 0.3s;
+}
+.eslogan .h1{
+    font-size: 80px;
+    color:rgb(180, 131, 85);
+    margin-bottom: -20px;
+    align-content: center;
+}
+.eslogan{
+    color:rgb(212, 184, 158);
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 200px;
+    margin-top: 100px;
+}
+.nosotros{
+    text-align: center;
+    background-color: black;
+    padding-top: 10px;
+}
+.nosotros .h1{
+    font-size: 40px;
+    color:rgb(180, 131, 85);
+    text-align: center;
+}
+.descripcion{
+    color:rgb(96, 85, 79);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-bottom: 30px;
+}
+.saberMas {
+    background-color: rgb(201, 130, 53);
+    padding: 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    color:black;
+    font-size: 20px;
+}
+.saberMas:hover{
+    background-color: rgb(81, 52, 21);
+    transition-duration: 0.3s;
+}
+.parrafo{
+    margin-left: 30px;
+    font-size: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+.img{
+    max-width:500px;
+    max-height: 400px;
+    min-width: 500px;
+    min-height: 400px;
+    margin-left: -80px;
+    margin-top: 20px;
+}
+.Productos{
+    color:rgb(0, 0, 0);
+    background-color: rgb(72, 44, 27);
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+.Productos .h1{
+    font-size: 60px;
+    text-align: center;
+}
+.Productos .h2{
+    margin-left: 30px;
+    font-size: 40px;
+    background-color: black;
+    color:rgb(94, 66, 35);
+    border-radius: 20px;
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-right: 1000px;
+    text-align: left;
+}
+.cafesTipo1{
+    display:flex;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.cafesTipos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aliceblue;
+    text-align: center;
+    border-radius: 20px;
+    max-width: 300px;
+    min-width:300px;
+    max-height: 400px;
+    min-height: 400px;
+}
+.TipoCafe{
+    max-width: 300px;
+    min-width: 300px;
+    max-height: 200px;
+    min-height: 200px;
+    border-radius: 15px;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+}
+.descubre{
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    margin-right: 620px;
+    border-radius: 50px;
+    margin-left: 620px;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    background-color: tan;
+    
+}
+.descubre-mas {
+    color:rgb(55, 45, 33);
+    text-decoration: none;
+    margin-left: 70px;
+}
+.descubre:hover{
+    background-color: rgb(124, 97, 61);
+    transition-duration: 0.3s;
+}
+.test{
+    color:black;
+    background-color: rgb(201, 130, 53);
+    padding-top: 20px;
+    padding-bottom: 90px;
+    background-image: url("Imagenes/Cafe4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.recomendaciones{
+    font-size: 50px;
+    text-align: center;
+    color:rgb(255, 255, 255);
+    margin-top: 60px;
+}
+.testlink{
+    text-decoration: none;
+    color:rgb(83, 58, 41);
+    background-color: rgb(214, 154, 63);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 30px;
+    margin-left: 200px;
+    margin-right: 200px;
+    display: flex;
+    flex-direction: column;
+}
+.testlink:hover{
+    background-color: rgb(129, 87, 42);
+    color:rgb(45, 32, 18);
+    transition-duration: 0.3s;
+}
+.testTitulo{
+    font-size: 40px;
+    color:rgb(45, 32, 18);
+    margin-left: 350px;
+
+}
+.testHacer{
+    margin-top: -20px;
+    margin-left: 300px;
+}
+.noticias{
+    padding-top: 20px;
+    background-color: rgb(254, 254, 254);
+}
+.Informate{
+    font-size: 60px;
+    text-align: center;
+    color:rgb(45, 32, 18);
+}
+.noticiasLista{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.noticia1{
+    background-image: url(Imagenes/Cafe5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 500px;
+    min-width: 500px;
+    max-height: 598px;
+    min-height: 598px;
+    text-align: center;
+    filter: brightness(50%);
+    font-size: 40px;
+}
+.noticia1:hover{
+    filter:brightness(100%);
+    transition-duration: 0.4s;
+    font-size: 50px;
+}
+.noticia2{
+    display:flex;
+    flex-direction: column;
+}
+
+.noticia21{
+    background-image: url(Imagenes/Cafe6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 400px;
+    min-width: 400px;
+    max-height: 282px;
+    min-height: 282px;
+    text-align: left;
+    color:white;
+    filter: brightness(50%);
+    margin-bottom: 16px;
+    font-size: 25px;
+}
+.noticiaA{
+    text-align: left;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.832);
+    padding: 20px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    margin-right: 40px;
+}
+.noticia21:hover{
+    filter:brightness(100%);
+    transition-duration: 0.4s;
+    font-size: 28px;
+    
+}
+.noticia22{
+    background-image: url(Imagenes/Cafe7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 400px;
+    min-width: 400px;
+    max-height: 284px;
+    min-height: 284px;
+    text-align: left;
+    color:white;
+    filter: brightness(50%);
+    margin-top: 16px;
+    font-size: 25px;
+}
+.noticiaB{
+    text-align: left;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.814);
+    padding: 20px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    margin-right: 40px;
+}
+.noticia22:hover{
+    filter:brightness(100%);
+    transition-duration: 0.4s;
+    font-size: 30px;
+}
+.noticia3{
+    background-image: url(Imagenes/Cafe8.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 500px;
+    min-width: 500px;
+    max-height: 598px;
+    min-height: 598px;
+    text-align: center;
+    filter: brightness(50%);
+    font-size: 40px;
+}
+.noticia3:hover{
+    filter:brightness(100%);
+    transition-duration: 0.4s;
+    font-size: 50px;
+}
+.textoNoticias{
+    font-size: 40px;
+    text-align: left;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.814);
+    padding: 20px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    margin-right: 40px;
+}
+.noticia1link{
+    text-decoration: none;
+}
+.noticia2link{
+    text-decoration: none;
+}
+.noticia3link{
+    text-decoration: none;
+}
+.noticia4link{
+    text-decoration: none;
+}
+.unete{
+    display: flex;
+    background-color:rgb(214, 154, 63);
+    margin-top: 60px;
+    padding-bottom: 40px;
+}
+.union{
+    display: flex;
+    margin-right: 40px;
+    margin-left: 20px;
+}
+.uneteAnosotros{
+    color:#332911;
+    font-size: 50px;
+    margin-bottom: -3px;
+}
+.TeInteresa{
+    color:black;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+.pregunta{
+    background-color: #332911;
+    padding: 20px;
+    font-size: 30px;
+    color:white;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    margin-left: -20px;
+}
+.info{
+    margin-top: -5px;
+    line-height: 1.5;
+}
+.mensaje{
+    margin-left: 500px;
+    margin-top: 50px;
+}
+.noborder{
+    border: 0;
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    width: 500px;
+    height: 200px;
+    padding-bottom: 150px;
+    padding-left: 10px;
+    outline: none;
+    border-radius: 10px;
+}
+.enviar{
+    text-align: right;
+    padding: 20px;
+    padding-right: 22px;
+    background-color: white;
+    margin-left: 410px;
+    margin-top: 30px;
+    border-radius: 30px;
+}
+.enviar:hover{
+    background-color: rgb(222, 194, 165);
+    color:rgb(45, 32, 18);
+    transition-duration: 0.3s;
+}
+.send{
+    text-decoration: none;
+    color:rgb(90, 65, 29);
+}
+.rellenable{
+    color:black;
+}
+.rellena:hover{
+    color:rgb(78, 54, 11);
+    transition-duration: 0.3;
+}
+.contacto_silvia{
+    color:rgb(255, 255, 255);
+    text-align: center;
+    font-size: 30px;
+    background-color: black;
+    margin-top: -40px;
+    padding-bottom: 50px;
+}
+.contactanos_silvia{
+    padding-top: 40px;
+    font-size: 60px;
+}
+.espacioDeTexto1{
+    width: 700px;
+    height: 40px;
+    margin-bottom: -40px;
+    border-radius: 10px;
+    margin-left: 30px;
+    padding-left: 10px;
+}
+.noborder1{
+    width: 700px;
+    height: 250px;
+    margin-left: 30px;
+    border-radius: 10px;
+    padding-bottom: 180px;
+    padding-left: 10px;
+}
+.botonEnviarFooter{
+    text-decoration: none;
+}
+.enviarContacto{
+    color:white;
+    background-color: rgb(201, 130, 53);
+    padding: 30px;
+}
+.enviarContacto:hover{
+    background-color: rgb(129, 87, 42);
+    color:rgb(45, 32, 18);
+    transition-duration: 0.3s;
+}
+
+/*CSS FORMULARIO.HTML*/
+
+.body_formulario{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 196, 94);
+    font-size: 18px;
+}
+.titulo-formulario{
+    font-size: 60px;
+    margin-bottom: -10px;
+}
+.form{
+    margin-left: 10px;    
+    margin-top: 40px;
+}
+.espacioDeTexto{
+    padding:10px;
+    padding-right: 80px;
+}
+.porQue{
+    box-sizing: border-box;
+    width: 500px;
+    height: 300px;
+    display: flex;
+    padding-bottom: 250px;
+}
+.curriculum{
+    font-size: 18px;
+}
+.curriculumTexto{
+    font-size: 18px;
+}
+.socio{
+    font-size: 18px;
+}
+.divFormulario{
+    display: flex;
+    align-items: center;
+}
+.envio{
+    background-color: black;
+    color:white;
+    text-decoration: none;
+    padding: 20px;
+    display: flex;
+    margin-top: 30px;
+    text-align: center;
+    border-radius: 10px;
+    padding-right: 710px;
+    padding-left: 750px;
+}
+.envio:hover{
+    background-color: rgb(103, 79, 37);
+    color:black;
+    transition-duration: 0.4s;
+}
+.textoEnviar{
+    display: flex;
+    align-items: center;
+}
+
+/*CSS FORMULARIOENVIADO*/
+
+.body_formularioEnviado{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color:white;
+}
+.muchasGracias{
+    font-size: 60px;
+}
+.formularioEnviado{
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+    text-align: center;
+    font-size: 40px;
+    line-height: 0.8;
+}
+.volver{
+    margin-top: 60px;
+    background-color: rgb(146, 110, 64);
+    padding: 40px;
+}
+.volverTexto{
+    color: black;
+    text-decoration: none;
+}
+.volver:hover{
+    background-color: rgb(65, 49, 28);
+    transition-duration: 0.4s;
+}
+
+/*CSS NOTICIAS*/
+
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.h1Noticias{
+    color:rgb(77, 53, 29);
+    text-align: center;
+    margin-top: 60px;
+    font-size: 70px;
+}
+.parrafoNoticia{
+    font-size: 25px;
+    text-align: justify;
+    margin: 80px;
+    display: flex;   
+    justify-content: space-between; 
+}
+.imgnoticia1{
+    max-width:600px;
+    max-height: 400px;
+    min-width: 600px;
+    min-height: 200px;
+    margin-left: 60px;
+}
+.imgnoticia{
+    width: 600px;
+    margin-left: 60px;
+}
+
+/*CSS TEST PEDRO*/
+
+*{
+
+    box-sizing: border-box;
+    font-size: 'Balsamic Sans';
+
+
+}
+
+.bodypedro{
+    background-image: url(imagenes/fondoCafe.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+.header_pedro{
+    text-align: center;
+    background-color: #bb640d;
+    color: black;
+    border-radius: 10px;
+    padding: 5px 0;
+    background-size: cover;
+}
+
+
+.container_pedro{
+    max-width: 700px;
+    margin:auto;
+    padding: 20px;
+}
+
+.section_pedro{
+    border:2px solid #bb640d;
+    border-radius: 10px;
+    padding: 10px;
+    margin:10px 0;
+    margin-bottom: 20px;
+}
+
+.label_pedro{
+    display: block;
+    padding: 7px;
+    border-radius: 7px;
+    cursor: pointer;
+    border: 1px dashed black;
+    margin-top: 3px;
+}
+
+.label_pedro:hover{
+    background: orange;
+}
+
+
+.btn_pedro{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding: 10px;
+
+    background-color: #bb640d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.btn_pedro:hover{
+    background: orange;
+    color:black;
+}
+
+#resultadopedro{
+    font-size: 90px;
+    color: darkred;
+}
+
+#imagenpedro{
+    align-items: center;
+}
+
+#textpedro{
+    size: 50px;
+    color: black;
+}
+
+@media (max-width:468) {
+    .container{
+        min-height: 100vh;
+        max-width: 100%;
+        border-radius: 0;
+    }    
+}
+
+.volver_index_pedro{
+    color: black;
+    margin-top: 40px;
+    text-decoration: none;
+    padding: 10px;
+    background-color: orange;
+    border-radius: 10px;
+}
+
+/*CSS INDEX ALVARO*/
+
+/* -----------------------------------------------------------------------------
+   Estilos generales
+   ----------------------------------------------------------------------------- */
+   .body_alvaro {
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+    font-family: Arial, sans-serif; /* Fuente predeterminada */
+    background-color: #6c3513; /* Color de fondo de la página */
+}
+
+/* -----------------------------------------------------------------------------
+   Encabezado (Header)
+   ----------------------------------------------------------------------------- */
+.encabezado_alvaro {
+    background-color: #372100; /* Color de fondo del encabezado */
+    padding: 0%; /* Sin relleno */
+}
+
+/* Barra de navegación */
+.encabezado_alvaro .barra-navegacion_alvaro {
+    display: flex; /* Usa flexbox para la disposición */
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+    padding: 0.5%; /* Relleno interno */
+    margin-right: 2%;
+}
+
+.encabezado_alvaro .logo_alvaro {
+    max-width: 150px; /* Ancho máximo del logo */
+    max-height: 150px; /* Alto máximo del logo */
+}
+
+.encabezado_alvaro .enlaces-navegacion_alvaro {
+    margin-left: auto; /* Alinea los enlaces a la derecha */
+}
+
+.encabezado_alvaro .enlace-navegacion_alvaro {
+    padding: 8px; /* Relleno interno de los enlaces */
+    color: whitesmoke; /* Color del texto de los enlaces */
+}
+
+/* Contenedor principal del encabezado */
+.encabezado_alvaro .contenedor-principal_alvaro {
+    display: flex; /* Usa flexbox para la disposición */
+    justify-content: space-between; /* Espacio entre los elementos */
+    padding: 0%; /* Sin relleno */
+}
+
+.encabezado_alvaro .contenedor-izquierdo_alvaro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
+    width: 60%;
+}
+
+.encabezado_alvaro .imagen-derecha_alvaro {
+    width: 60%;
+    height: auto;
+    border-top-left-radius: 4%;
+}
+
+.encabezado_alvaro .titulo_alvaro {
+    font-size: 2em; /* Tamaño del título */
+    margin-bottom: 2%; /* Margen inferior */
+    color: #d7b372; /* Color del título */
+}
+
+.encabezado_alvaro .descripcion_alvaro {
+    font-size: 1em; /* Tamaño del texto */
+    margin-bottom: 8%; /* Margen inferior */
+    color: white;
+}
+
+/* Enlaces dentro del contenedor izquierdo */
+.encabezado_alvaro .enlaces-contenido_alvaro {
+    margin-bottom: 40px; /* Margen inferior */
+}
+
+.encabezado_alvaro .enlace-boton_alvaro {
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+.encabezado_alvaro .boton-primario_alvaro {
+    background-color: #d7b372; /* Color de fondo del botón primario */
+    border-radius: 20px; /* Bordes redondeados */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Relleno interno */
+    margin-right: 10px; /* Margen derecho */
+    text-decoration: none; /* Sin decoración de texto */
+}
+
+.encabezado_alvaro .boton-secundario_alvaro {
+    background-color: white; /* Color de fondo del botón secundario */
+    border-radius: 20px; /* Bordes redondeados */
+    color: #4b5c54; /* Color del texto */
+    padding: 10px 20px; /* Relleno interno */
+    text-decoration: none; /* Sin decoración de texto */
+}
+
+/* Carrusel de imágenes */
+.encabezado_alvaro .carrusel_alvaro {
+    display: flex; /* Usa flexbox para la disposición */
+    flex-direction: column; /* Dirección de la columna */
+    width: 100%; /* Ancho del carrusel */
+    height: auto;
+    border-radius: 20px; /* Bordes redondeados */
+    margin-top: 20px; /* Margen superior */
+    position: relative; /* Posición relativa para los botones */
+}
+
+.encabezado_alvaro .imagen-carrusel_alvaro {
+    width: 100%; /* Ancho máximo de la imagen */
+    height: auto;
+}
+
+/* Botones de navegación del carrusel */
+.encabezado_alvaro .botones-carrusel_alvaro {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px; /* Espacio entre la imagen y los botones */
+}
+
+.encabezado_alvaro .boton-anterior_alvaro,
+.encabezado_alvaro .boton-siguiente_alvaro {
+    border-radius: 50%; /* Bordes redondeados */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 10px; /* Relleno interno */
+}
+
+.encabezado_alvaro .boton-anterior_alvaro {
+    margin-right: auto; /* Alinea el botón anterior a la izquierda */
+}
+
+.encabezado_alvaro .boton-siguiente_alvaro {
+    margin-left: auto; /* Alinea el botón siguiente a la derecha */
+}
+
+/* Contenedor derecho del encabezado */
+.encabezado_alvaro .imagen-derecha_alvaro {
+    max-height: 100%; /* Alto máximo de la imagen */
+    max-width: 100%; /* Ancho máximo de la imagen */
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
+}
+
+
+/* -----------------------------------------------------------------------------
+   Sección 2 (Section)
+   ----------------------------------------------------------------------------- */
+.seccion-secundaria_alvaro {
+    padding: 2%; /* Relleno interno */
+    background-color: rgb(225, 225, 225); /* Color de fondo blanco */
+}
+
+.seccion-secundaria_alvaro .titulo-seccion_alvaro {
+    color: #372100; /* Color del título */
+    text-align: center; /* Alinea el texto al centro */
+    font-size: xx-large;
+}
+
+.seccion-secundaria_alvaro .texto-seccion_alvaro {
+    text-align: center; /* Alinea el texto al centro */
+    margin-bottom: 30px; /* Margen inferior */
+}
+
+.seccion-secundaria_alvaro .galeria-imagenes_alvaro {
+    display: flex; /* Usa flexbox para la disposición */
+    flex-direction: column; /* Dirección de la columna */
+}
+
+.seccion-secundaria_alvaro .fila-imagenes_alvaro {
+    display: flex; /* Usa flexbox para la disposición */
+    justify-content: space-between; /* Espacio entre las imágenes */
+    margin-bottom: 2%; /* Margen inferior */
+}
+
+.seccion-secundaria_alvaro .imagen-grande_alvaro {
+    width: 68%; /* Ancho de la imagen grande en porcentaje */
+    height: auto; /* Alto automático para mantener la proporción */
+    border-radius: 20PX;
+}
+
+.seccion-secundaria_alvaro .imagen-pequena_alvaro {
+    width: 30%; /* Ancho de la imagen pequeña en porcentaje */
+    height: auto; /* Alto automático para mantener la proporción */
+    border-radius: 20PX;
+}
+
+/* -----------------------------------------------------------------------------
+   Sección 3 (Section)
+   ----------------------------------------------------------------------------- */
+.seccion-terciaria_alvaro {
+    padding: 5%; /* Relleno interno */
+    background-color: #c0a363 ;
+    display: flex; /* Usa flexbox para la disposición */
+}
+
+.seccion-terciaria_alvaro .caja_alvaro {
+    width: 30%;
+    margin: 1%; /* Espacio entre las cajas */
+    text-align: center; /* Centra el texto */
+}
+
+.seccion-terciaria_alvaro .caja_alvaro .imagen-caja_alvaro {
+    width: 25%; /* Ajusta el ancho de la imagen al contenedor */
+}
+
+.seccion-terciaria_alvaro .caja_alvaro .titulo-caja_alvaro {
+    margin-top: 10px; /* Espacio superior para el título */
+    font-size: 1.5em; /* Tamaño de fuente */
+    color: #000000; /* Color del texto */
+}
+
+.seccion-terciaria_alvaro .caja_alvaro .texto-caja_alvaro {
+    margin-top: 10px; /* Espacio superior para el párrafo */
+    font-size: 1em; /* Tamaño de fuente */
+    color: #ffffff; /* Color del texto */
+}
+
+.seccion-terciaria_alvaro .caja_alvaro .enlace-caja_alvaro {
+    color: #040404;
+}
+
+/* -----------------------------------------------------------------------------
+   Sección 5 (Section)
+   ----------------------------------------------------------------------------- */
+.seccion-quinta_alvaro {
+    padding: 5%; /* Relleno interno */
+    background-color:  #452a01;
+    display: flex; /* Usa flexbox para la disposición */
+    color: aliceblue;
+    
+}
+
+.seccion-quinta_alvaro .contenedor_alvaro {
+    width: 30%;
+}
+
+.seccion-quinta_alvaro .texto-contenedor_alvaro {
+    padding: 8%;
+}
+
+/* -----------------------------------------------------------------------------
+   Sección 7 (Section)
+   ----------------------------------------------------------------------------- */
+.seccion-septima_alvaro {
+    padding: 5%; /* Relleno interno */
+    background-color: rgb(225, 225, 225); /* Color de fondo blanco */
+    display: flex; /* Usa flexbox para la disposición */
+    flex-direction: column; /* Dirección de la columna */
+    align-items: center; /* Centra horizontalmente */
+}
+
+.seccion-septima_alvaro .titulo-seccion_alvaro {
+    color: #372100; /* Color del título */
+    text-align: center; /* Alinea el texto al centro */
+    font-size: xx-large;
+    margin-bottom: 20px; /* Espacio inferior para separar del contenido */
+}
+
+.seccion-septima_alvaro .caja_alvaro {
+    display: flex; /* Usa flexbox para la disposición */
+    justify-content: space-around; /* Distribuye el espacio alrededor de los elementos */
+    width: 100%; /* Ancho del contenedor */
+   
+    margin: 0 auto; /* Centra el contenedor */
+}
+
+.seccion-septima_alvaro .caja_alvaro .imagen-caja_alvaro {
+    width: 16%; /* Ajusta el ancho de la imagen */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 5%; /* Hace la imagen redonda */
+    object-fit: cover; /* Cubre el espacio asignado */
+}
+
+/* -----------------------------------------------------------------------------
+   Pie de página (Footer)
+   ----------------------------------------------------------------------------- */
+.pie-de-pagina_alvaro {
+    background-color: #372100; /* Color de fondo del pie de página */
+    color: white; /* Color del texto */
+    padding: 2%; /* Relleno interno */
+}
+
+.pie-de-pagina_alvaro .contenedor-principal_alvaro {
+    display: flex; /* Usa flexbox para la disposición */
+    justify-content: space-between; /* Espacio entre los elementos */
+    padding: 1%;
+}
+
+.pie-de-pagina_alvaro .contenido-izquierdo_alvaro {
+    width: 45%; /* Ancho del contenido izquierdo */
+}
+
+.pie-de-pagina_alvaro .titulo-pie_alvaro {
+    font-size: 1.5em; /* Tamaño del título */
+    margin-bottom: 10px; /* Margen inferior */
+}
+
+.pie-de-pagina_alvaro .texto-pie_alvaro {
+    margin-bottom: 5px; /* Margen inferior */
+}
+
+.pie-de-pagina_alvaro .iconos-redes_alvaro {
+    margin-top: 20px; /* Margen superior */
+}
+
+.pie-de-pagina_alvaro .iconos-redes_alvaro .enlace-red_alvaro {
+    display: inline-block; /* Muestra los enlaces en línea */
+    margin-right: 10px; /* Margen derecho */
+}
+
+.pie-de-pagina_alvaro .iconos-redes_alvaro .enlace-red_alvaro img {
+    width: 30px; /* Ancho de los iconos */
+    height: 30px; /* Alto de los iconos */
+}
+
+.pie-de-pagina_alvaro .contenido-derecho_alvaro {
+    width: 45%; /* Ancho del contenido derecho */
+}
+
+.pie-de-pagina_alvaro .formulario-contacto_alvaro {
+    display: flex; /* Usa flexbox para la disposición */
+    flex-direction: column; /* Dirección de la columna */
+}
+
+.pie-de-pagina_alvaro .formulario-contacto_alvaro .entrada-formulario_alvaro,
+.pie-de-pagina_alvaro .formulario-contacto_alvaro .area-texto-formulario_alvaro {
+    margin-bottom: 10px; /* Margen inferior */
+    padding: 8px; /* Relleno interno */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+.pie-de-pagina_alvaro .formulario-contacto_alvaro .area-texto-formulario_alvaro {
+    resize: vertical; /* Permite redimensionar verticalmente */
+}
+
+.pie-de-pagina_alvaro .formulario-contacto_alvaro .boton-formulario_alvaro {
+    background-color: #d7b372; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Relleno interno */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+
+.pie-de-pagina_alvaro .contenedor-inferior_alvaro {
+    text-align: center; /* Centra el texto */
+    margin-top: 20px; /* Margen superior */
+}
+
+.pie-de-pagina_alvaro .contenedor-inferior_alvaro .enlaces-navegacion_alvaro .enlace-navegacion_alvaro {
+    color: white; /* Color del texto de los enlaces */
+    text-decoration: none; /* Sin decoración de texto */
+    padding: 0 10px; /* Relleno interno */
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .pie-de-pagina_alvaro .contenedor-principal_alvaro {
+        flex-direction: column; /* Apila los elementos verticalmente */
+    }
+
+    .pie-de-pagina_alvaro .contenido-izquierdo_alvaro,
+    .pie-de-pagina_alvaro .contenido-derecho_alvaro {
+        width: 100%; /* Ancho completo */
+        margin-bottom: 20px; /* Margen inferior */
+    }
+}
+
+/*CSS AM*/
+
+
+.body_am {
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px; 
+    padding: 20px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.recipe {
+    display: none;
+    text-align: left;
+}
+
+button {
+    background: #d2691e;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #a0522d;
+}
+
+
+.h1_am {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+}
+
+h3 {
+    font-family:'Garamond', Times, serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: #4c3d03;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+}
+/*FTT CSS*/
+
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+    font-style: normal;
+    box-sizing: border-box;
+
+}
+
+.img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(Imagenes/pexels-goumbik-1419931.jpg);
+    background-size: cover;
+    height: 500px;
+
+}
+.logo {
+   margin-top: -200px;
+   margin-left: -100px;
+}
+
+
+.text {
+    display: flex;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+  margin-right: 50px;
+
+}
+
+/*secion 1*/
+
+
+.seccion1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(Imagenes/pexels-polina-tankilevitch-4109751.jpg);
+    background-size: cover;
+    background-position: top;
+    height: auto;
+    width: 100%;
+    padding: 80px;
+    box-sizing: border-box;
+    /* padding: 200px;
+    gap: 170px;
+    height: 200px; */
+    /* Asegúrate de que el ancho y el alto sean iguales */
+}
+
+
+.texto1 {
+
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-right: 200px;
+    width: 60%;
+    margin-left: 80px;
+   
+
+}
+
+.h3_1 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    object-fit: cover;
+    font-size: 30px;
+    color: #331809;
+
+
+   
+}
+.href {
+    text-decoration: none;
+    color: inherit;
+    color: rgb(184, 142, 86);
+
+}
+
+.p_1 {
+
+    font-size: medium;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    font-size: 20px;
+    color: #1e0d05;
+
+
+}
+
+
+
+
+
+
+/* seccion2 */
+
+
+
+.seccion2 {
+    background-image: url(Imagenes/pexels-cottonbro-3584972.jpg);
+    background-size: cover;
+    background-position: top;
+    object-fit: cover;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    width: 100%;    
+    height: auto;
+    padding: 15%;
+    gap: 100px;
+    height: 200px;
+    box-sizing: border-box;
+    /* Asegúrate de que el ancho y el alto sean iguales */
+   
+
+}
+
+.texto2 {
+
+    font-size: 20px;
+    justify-content: center;
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: -10%;
+   margin-right: 300px;
+ 
+}
+
+
+
+/* seccion3 */
+
+
+.seccion3 {
+    background-image: url(Imagenes/2pexels-goumbik-942809.jpg);
+    background-size: cover;
+    background-position: top;
+    object-fit: cover;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    height: auto;
+    padding: 200px;
+    gap: 200px;
+    height: 200px;
+    /* Asegúrate de que el ancho y el alto sean iguales */
+
+
+
+}
+
+
+.texto3 {
+    margin-top: 50px;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+    
+
+}
+
+
+
+/* seccion 4 */
+
+
+.seccion4 {
+    background-size: cover;
+    background-position: top;
+    object-fit: cover;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    height: auto;
+    padding: 200px;
+    gap: 100px;
+    height: 200px;
+
+    /* Asegúrate de que el ancho y el alto sean iguales */
+
+}
+
+.texto4 {
+
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.img4 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+    width: 100%;
+    width: 500px;
+    /* Asegura que la imagen ocupe todo el contenedor */
+    height: 500px;
+    /* Mantiene la proporción de la imagen */
+    object-fit: cover;
+    /* Asegura que la imagen cubra todo el espacio */
+    border-radius: 10%;
+
+
+}
+
+footer {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background:rgb(184, 142, 86);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.footer-content a {
+   
+    color: #000000;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.footer-content  {
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*ESPECIALIDAD CSS*/
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(250, 243, 233);
+    width: 100%;
+ 
+}
+
+.encabezado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(Imagenes/encabezado.jpg);
+    background-size: cover;
+    height: 80%;
+  
+}
+.seccion_1 {
+    margin: 10%;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+.img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+
+
+}
+
+.texto_header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-right: 100px;
+    font-size: 300%;
+
+}
+
+.enlace {
+    text-decoration: none; /* Quitar la línea */
+    color: rgb(15, 30, 161); /* Color inicial del enlace */
+    transition: color 0.3s ease-in-out; /* Suavizar el cambio de color */
+
+}
+
+.texto_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+.h2_1 {
+    font-size: 280%;
+}
+.h_1{
+    font-size: 130%;
+    font-size: 280%;
+}
+
+.p1 {
+    font-size: 130%;
+    font-size: 130%;
+
+}
+
+.p2 {font-size: 130%;
+     justify-content: left;
+    width: 98%;
+    
+
+}
+
+.img_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    width: 100%;
+   
+}
+
+.texto_2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.tipo {
+    text-decoration: none;
+    color: rgb(15, 30, 161);
+    transition: color 0.3s ease-in-out;
+}
+
+footer {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background:rgb(184, 142, 86);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.footer-content a {
+   
+    color: #000000;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.footer-content  {
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
