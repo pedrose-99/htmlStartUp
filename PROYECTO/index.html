@@ -1,158 +1,142 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffe Switch</title>
     <link rel="stylesheet" href="proyecto.css">
+    <title>Document</title>
 </head>
-
-<body class="body_alvaro">
-    <!-- Encabezado de la página -->
-    <header class="encabezado_alvaro">
-        <!-- Barra de navegación -->
-        <div class="barra-navegacion_alvaro">
-            <img class="logo_alvaro" src="Imagenes/Header/Logo.png" alt="LOGO">
-            <nav class="enlaces-navegacion_alvaro">
-                <a class="enlace-navegacion_alvaro" href="">Nuestro Café</a>
-                <a class="enlace-navegacion_alvaro" href="">Nuestra Historia</a>
-                <a class="enlace-navegacion_alvaro" href="">Compromiso</a>
-                <a class="enlace-navegacion_alvaro" href="">Contacto</a>
-            </nav>
+<body class="body_silvia">
+    <header class="header_silvia">
+        <div id="Inicio"></div>
+        <div class="inicio">
+            
+                <nav class="navbar">
+                    
+                    <a class="menu1" href="#Inicio">Inicio</a>
+                    <a class="menu1" href="#productos">Productos</a>
+                    <a class="menu1" href="#Test">Test</a>
+                    <a class="menu1" href="#Noticias">Noticias</a>
+                    <a class="menu1" href="#Unete">Únete</a>
+                    <a class="menu1" href="#Contacto">Contacto</a>
+                </nav>   
+            
+                 
         </div>
-
-        <!-- Contenedor principal del encabezado -->
-        <div class="contenedor-principal_alvaro">
-            <!-- Contenedor izquierdo -->
-            <div class="contenedor-izquierdo_alvaro">
-                <h1 class="titulo_alvaro">Pasión por el café, desde la semilla hasta tu taza</h1>
-                <p class="descripcion_alvaro">En Coffe Switch, somos una startup impulsada por el amor al café de especialidad.  Seleccionamos granos de las mejores fincas, trabajamos de la mano con productores locales y tostamos con precisión para ofrecerte una experiencia de café excepcional.  Descubre un mundo de sabores y aromas únicos en cada taza.</p>
-
-                <!-- Enlaces dentro del contenedor izquierdo -->
-                <div class="enlaces-contenido_alvaro">
-                    <a class="enlace-boton_alvaro boton-primario_alvaro" href="">Descubre nuestro café</a>
-                    <a class="enlace-boton_alvaro boton-secundario_alvaro" href="">Conoce nuestra historia</a>
-                </div>
-
-                <!-- Carrusel de imágenes -->
-                <div class="carrusel_alvaro">
-                    <div class="carrusel-interno_alvaro">
-                        <div class="carrusel-activo_alvaro">
-                            <img class="imagen-carrusel_alvaro" src="Imagenes/Header/Fabrica.jpg" alt="Imagen 1">
-                        </div>
-                    </div>
-                    <div class="botones-carrusel_alvaro">
-                        <button class="boton-anterior_alvaro" onclick="prevSlide()">&#10094;</button>
-                        <button class="boton-siguiente_alvaro" onclick="nextSlide()">&#10095;</button>
-                    </div>
-                </div>
-            </div>
-
-            <img class="imagen-derecha_alvaro" src="Imagenes/Header/Fabrica-2.jpg" alt="Imagen 2">
+        <div class="eslogan">
+            <a class="logo" href="#Inicio">
+                <img src="Imagenes/logo-removebg-preview.png"></img>
+            </a>
+            <h1 class="h1"><b>Coffee Switch</b></h1>
+            <p>El interruptor de tu energía</p>
         </div>
     </header>
-
-   
-    <!-- Sección 2 -->
-    <section class="seccion-secundaria_alvaro">
-        <h2 class="titulo-seccion_alvaro">Nuestros orígenes</h2>
-        <p class="texto-seccion_alvaro">Desde las montañas hasta tu hogar, te contamos cómo nace nuestro café.</p>
-
-        <div class="galeria-imagenes_alvaro">
-            <div class="fila-imagenes_alvaro">
-                <img class="imagen-grande_alvaro" src="Imagenes/Seccion-2/Cafe-1.png" alt="Imagen 1">
-                <img class="imagen-pequena_alvaro" src="Imagenes/Seccion-2/Cafe-2.jpg" alt="Imagen 2">
+    <section class="nosotros">    
+        <div class="descripcion">
+        <img class="img" src="Imagenes/Cfe3.jpg">
+        <div class="parrafo1">
+            <h1 class="h1">Sobre nosotros</h1>
+            <p class="parrafo">Coffee Switch es una innovadora startup dedicada a la creación de mezclas personalizadas de café, diseñada para satisfacer las preferencias individuales de sus clientes. En un mundo donde el café se ha convertido en una parte esencial de la vida diaria, Coffee Switch se destaca al ofrecer una experiencia única y adaptada a cada paladar.</p>
+            <a class="saberMas" href="alvaro.html"><b>Saber más</b></a>
+        </div>
+        </div>
+    </section>
+    <section class="Productos" id="productos">
+        <h1 class="h1">¿Qué vendemos?</h1>
+        <h2 class="h2">Lo más vendido ></h2>
+        <div class="cafesTipo1">
+            <div class="cafesTipos">
+                <img class="TipoCafe" src="Imagenes/cafea.png">
+                    <h3>Arábica</h3>
+                    <p>Es el tipo de café más popular y representa alrededor del 60-70% de la producción mundial. Tiene un sabor suave y aromático.</p>
             </div>
-            <div class="fila-imagenes_alvaro">
-                <img class="imagen-pequena_alvaro" src="Imagenes/Seccion-2/Cafe-3.jpg" alt="Imagen 3">
-                <img class="imagen-grande_alvaro" src="Imagenes/Seccion-2/Cafe-4.jpg" alt="Imagen 4">
+            <div class="cafesTipos">
+                <img class="TipoCafe" src="Imagenes/cafeb.png">
+                    <h3>Robusta</h3>
+                    <p>Conocido por su sabor fuerte y amargo, contiene más cafeína que el Arábica y se utiliza a menudo en mezclas de café instantáneo</p>
             </div>
-    </section>
-
-    <!-- Sección 3 -->
-    <section class="seccion-terciaria_alvaro">
-        <div class="caja_alvaro">
-            <img class="imagen-caja_alvaro" src="Imagenes/Seccion-3/icono-1.png" alt="Icono-1">
-            <h3 class="titulo-caja_alvaro">Café de especialidad</h3>
-            <p class="texto-caja_alvaro">Seleccionamos granos con los más altos estándares de calidad, cultivados de forma sostenible.</p>
-            <a class="enlace-caja_alvaro" href="">Más información</a>
+            <div class="cafesTipos">
+                <img class="TipoCafe" src="Imagenes/cafec.png">
+                    <h3>Liberica</h3>
+                    <p>Tiene un sabor único y afrutado, con notas florales. Es menos común y se cultiva principalmente en Filipinas y Malasia.</p>
+                
+            </div>
+            <div class="cafesTipos">
+                <img class="TipoCafe" src="Imagenes/cafed.png">
+                    <h3>Excelsa</h3>
+                    <p>A menudo se considera una variedad de Liberica, pero tiene un perfil de sabor distinto, con notas afrutadas y ácidas</p>
+            </div>
         </div>
-        <div class="caja_alvaro">
-            <img class="imagen-caja_alvaro" src="Imagenes/Seccion-3/icono-2.png" alt="Icono-2">
-            <h3 class="titulo-caja_alvaro">Tostado artesanal</h3>
-            <p class="texto-caja_alvaro">Tostamos cada lote con precisión para resaltar los sabores únicos de cada origen.</p>
-            <a class="enlace-caja_alvaro" href="">Más información</a>
-        </div>
-        <div class="caja_alvaro">
-            <img class="imagen-caja_alvaro" src="Imagenes/Seccion-3/icono-3.png" alt="Icono-3">
-            <h3 class="titulo-caja_alvaro">Compromiso social</h3>
-            <p class="texto-caja_alvaro">Trabajamos directamente con productores, apoyando prácticas justas y el desarrollo de sus comunidades.</p>
-            <a class="enlace-caja_alvaro" href="">Más información</a>
-        </div>
-    </section>... <!-- Sección 5 -->
-    <section class="seccion-quinta_alvaro">
-        <img class="contenedor_alvaro" src="Imagenes/Seccion-5/cafe-left.png" alt="Fondos-abtractos">
-        <div class="texto-contenedor_alvaro">
-            <h2 class="titulo-seccion_alvaro">Únete a la experiencia Coffe Switch</h2>
-            <p class="texto-seccion_alvaro">Descubre un café que te conecta con el origen, con el trabajo de manos expertas y con un sabor que te inspira.</p>
-            <p class="texto-seccion_alvaro">Te invitamos a explorar nuestra selección, a compartir tu pasión por el café y a ser parte de nuestra comunidad.</p>
+        <div id="Test"></div>
+        <div class="descubre">
+            <a class="descubre-mas" href="ftt.html"><b>DESCUBRE MÁS</b></a>
         </div>
     </section>
-
-
-    <!-- Sección 7 -->
-    <section class="seccion-septima_alvaro">
-        <h2 class="titulo-seccion_alvaro">Nuestro equipo</h2>
-        <div class="caja_alvaro">
-            <img class="imagen-caja_alvaro" src="Imagenes/Seccion-7/Persona-1.png" alt="Icono-1">
-            <img class="imagen-caja_alvaro" src="Imagenes/Seccion-7/Persona-5.png" alt="Icono-2">
-            <img class="imagen-caja_alvaro" src="Imagenes/Seccion-7/Persona-2.png" alt="Icono-3">
-            <img class="imagen-caja_alvaro" src="Imagenes/Seccion-7/Persona-3.png" alt="Icono-4">
-            <img class="imagen-caja_alvaro" src="Imagenes/Seccion-7/Persona-4.png" alt="Icono-5">
-
+    <section class="Recetas">
+        <h1 class="recetastitulo_s">Prepara tu propio café</h1>
+        <div class="recetasdiv">
+            <a class="verRecetas" href="AM.html">Ver Recetas</a>
         </div>
     </section>
-
-
-    <!-- Pie de página -->
-    <footer class="pie-de-pagina_alvaro">
-        <!-- Contenido izquierdo del pie de página -->
-        <div class="contenedor-principal_alvaro">
-            <div class="contenido-izquierdo_alvaro">
-                <h2 class="titulo-pie_alvaro">Coffe Switch</h2>
-                <p class="texto-pie_alvaro">Café de especialidad, tostado con pasión.</p>
-                <p class="texto-pie_alvaro">Tu experiencia de café, reinventada.</p>
-                <p class="texto-pie_alvaro">202-555-0126</p>
-                <p class="texto-pie_alvaro">info@coffeeswitch.com</p>
-                <!-- Iconos de redes sociales -->
-                <div class="iconos-redes_alvaro">
-                    <p class="texto-pie_alvaro">Síguenos:</p>
-                    <a href="#" class="enlace-red_alvaro"><img src="Imagenes/Footer/Facebook.png" alt="Facebook"></a>
-                    <a href="#" class="enlace-red_alvaro"><img src="Imagenes/Footer/Instagram.webp" alt="Instagram"></a>
+    <section class="test">
+        <h2 class="recomendaciones">Nuestras recomendaciones</h2>
+        
+        <a class="testlink" href="pedro.html">
+            <h1 class="testTitulo">Descubre tu café ideal</h1>
+            <p class="testHacer">¡Realiza este test y te recomendaremos un café personalizado a tu gusto!</p>
+        </a>
+    </section>
+    <section class="noticias">
+        <div id="Noticias"></div>
+        <h1 class="Informate">Infórmate</h1>
+        <div class="noticiasLista">
+            <div class="noticia1"><a class="noticia1link" href="noticia1.html">
+                <p class="textoNoticias">Transformación en los hábitos de consumo</p>
+            </a></div>
+            <div class="noticia2">
+                <div class="noticia21">
+                    <a class="noticia2link" href="noticia2.html">
+                        <p class="noticiaA">Expansión de grandes cadenas y consolidación del mercado</p>
+                    </a>
+                </div>
+                <div class="noticia22">
+                    <a class="noticia3link" href="noticia3.html">
+                        <p class="noticiaB">Aumento de precios y factores determinantes</p>
+                    </a>
                 </div>
             </div>
-            <!-- Contenido derecho del pie de página -->
-            <div class="contenido-derecho_alvaro">
-                <!-- Formulario de contacto -->
-                <form class="formulario-contacto_alvaro">
-                    <input type="text" placeholder="Name" required class="entrada-formulario_alvaro">
-                    <input type="email" placeholder="Email" required class="entrada-formulario_alvaro">
-                    <textarea placeholder="Talk to us" required class="area-texto-formulario_alvaro"></textarea>
-                    <button type="submit" class="boton-formulario_alvaro">Send</button>
-                </form>
+            <div class="noticia3"><a class="noticia4link" href="noticia4.html">
+                <p class="textoNoticias">Cuatro cafeterías españolas entre las 100 mejores del mundo</p>
+            </a></div>
+        </div>
+    </section>
+    <section class="unete">
+        <div id="Unete"></div>
+        <div class="union">
+            <div class="TeInteresa">
+                <h1 class="uneteAnosotros">Únete a nosotros</h1>
+                <p class="pregunta">¿Te interesa el café?</p>
+                <p class="info">Aquí se facilita un formulario rellenable para formar parte de nuestro equipo:</p>
+                <a class="rellenable" href="formulario.html"><p class="rellena">Rellena el formulario aquí</p></a>
+            </div>
+            <div class="mensaje">
+                <form class="formulario"><input type=text placeholder="Mensaje.." class="noborder"></form>
+                <div class="enviar">
+                    <a class="send" href="index.html">Enviar</a>
+                </div>
             </div>
         </div>
-        <!-- Enlaces Nuevos -->
-        <div class="contenedor-inferior_alvaro">
-            <nav class="enlaces-navegacion_alvaro">
-                <a class="enlace-navegacion_alvaro" href="">Términos y Condiciones</a>
-                <a class="enlace-navegacion_alvaro" href="">Política de Privacidad</a>
-                <a class="enlace-navegacion_alvaro" href="">Preguntas Frecuentes</a>
-                <a class="enlace-navegacion_alvaro" href="">Trabaja con nosotros</a>
-            </nav>
-        </div>
+    </section>
+    <footer class="contacto_silvia">
+        <div id="Contacto"></div>
+        <h1 class="contactanos_silvia">Contáctanos</h1>
+        <form>
+            <input placeholder="Nombre.." class="espacioDeTexto1" type="text"/><br><br>
+            <input placeholder="Apellidos.."  class="espacioDeTexto1" type="text"/> <br><br>
+            <input placeholder="Correo Electrónico.."  class="espacioDeTexto1" type="text"/> <br><br>
+            <form class="formulario"><input type=text placeholder="Mensaje.." class="noborder1"></form>
+            <a class="botonEnviarFooter" href="formularioEnviado.html"><p class=enviarContacto>Enviar</p></a>
+        </form>
     </footer>
 </body>
-
 </html>
