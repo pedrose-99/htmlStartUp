@@ -480,6 +480,37 @@ html{
     color:rgb(45, 32, 18);
     transition-duration: 0.3s;
 }
+.recetastitulo_s{
+    font-size: 70px;
+    text-align: center;
+
+}
+.Recetas{
+    background-color: rgb(201, 130, 53);
+    padding-top: 30px;
+    color:#1e0d05;
+    padding-bottom: 30px;
+}
+.verRecetas{
+    text-decoration: none;
+    color:rgb(255, 197, 135);
+    background-color: #452a01;
+    background: linear-gradient(#452a01, #2c1b02);
+    padding: 30px;
+    border-radius: 30px;
+    font-size: 20px;
+
+}
+.recetasdiv{
+    display: flex;
+    margin-left: 670px;
+    margin-bottom: 30px;
+}
+.verRecetas:hover{
+    background: linear-gradient(#1a0f00, #000000);
+    transition-duration: 0.5s;
+    
+}
 
 /*CSS FORMULARIO.HTML*/
 
@@ -596,7 +627,7 @@ body{
 }
 .imgnoticia1{
     max-width:600px;
-    max-height: 400px;
+    max-height:600px;
     min-width: 600px;
     min-height: 200px;
     margin-left: 60px;
@@ -1170,26 +1201,27 @@ body {
 
 }
 
-.img {
+.img_header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-image: url(Imagenes/pexels-goumbik-1419931.jpg);
-    background-size: cover;
+    background-size:cover;
     height: 500px;
 
 }
 .logo {
-   margin-top: -200px;
+   margin-top: -100px;
    margin-left: -100px;
 }
 
 
 .text {
     display: flex;
-    font-size: 50px;
+    text-align: left;
+    font-size: 80px;
     color: rgb(0, 0, 0);
-  margin-right: 50px;
+    margin-right: 50px;
 
 }
 
@@ -1351,6 +1383,8 @@ body {
     padding: 200px;
     gap: 100px;
     height: 200px;
+    margin-top: 60px;
+    margin-bottom: 80px;
 
     /* Asegúrate de que el ancho y el alto sean iguales */
 
@@ -1402,6 +1436,9 @@ footer {
     color: #000000;
     text-decoration: none;
     margin: 0 10px;
+}
+.footer-content a:hover{
+    color:white;
 }
 .footer-content  {
 
