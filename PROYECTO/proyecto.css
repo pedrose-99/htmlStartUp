@@ -443,6 +443,8 @@ html{
     background-color: black;
     margin-top: -40px;
     padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
 }
 .contactanos_silvia{
     padding-top: 40px;
@@ -471,6 +473,7 @@ html{
     color:white;
     background-color: rgb(201, 130, 53);
     padding: 30px;
+    border-radius: 30px;
 }
 .enviarContacto:hover{
     background-color: rgb(129, 87, 42);
@@ -484,6 +487,7 @@ html{
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(255, 196, 94);
     font-size: 18px;
+    margin-left: 30px;
 }
 .titulo-formulario{
     font-size: 60px;
@@ -538,7 +542,6 @@ html{
     display: flex;
     align-items: center;
 }
-.logo
 
 /*CSS FORMULARIOENVIADO*/
 
