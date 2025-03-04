@@ -6,7 +6,7 @@
 
 }
 
-body{
+.bodypedro{
     background-image: url(imagenes/fondoCafe.avif);
     background-repeat: no-repeat;
     background-size: cover;
@@ -83,6 +83,15 @@ body{
 #textpedro{
     size: 50px;
     color: black;
+}
+
+.volver_index_pedro{
+    color: black;
+    margin-top: 40px;
+    text-decoration: none;
+    padding: 10px;
+    background-color: orange;
+    border-radius: 10px;
 }
 
 @media (max-width:468) {
