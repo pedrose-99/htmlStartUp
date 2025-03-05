@@ -35,17 +35,17 @@ function mostrarResultado(){
 
     if (cantidad_puntos < 17)
         {
-            imageGenerada.src = 'imagenes/caramel.png';
+            imageGenerada.src = 'Imagenes/caramel.png';
             textGenerado.textContent = 'Café Caramel Marcchiato'
         }
         else if (cantidad_puntos < 34)
         {
-            imageGenerada.src = 'imagenes/840d2867-004c-4e9e-a497-f1223dd9f146-2_d8eca44e-460f-4692-9899-1f3604bdfd0f.png';
+            imageGenerada.src = 'Imagenes/840d2867-004c-4e9e-a497-f1223dd9f146-2_d8eca44e-460f-4692-9899-1f3604bdfd0f.png';
             textGenerado.textContent = 'Café Irlandes'
         }
         else
         {
-            imageGenerada.src = 'imagenes/unnamed.png';
+            imageGenerada.src = 'Imagenes/unnamed.png';
             textGenerado.textContent = 'Café Espresso'
         }
         resultDiv.style.display = 'block';
